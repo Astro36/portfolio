@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "parcel page/index.html",
+    "dev": "parcel watch page/index.html",
+    "lint": "eslint page/index.js",
+    "lint:fix": "eslint page/index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astro36/portfolio.git"
+  },
+  "author": "Seungjae Park <astr36@naver.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Astro36/portfolio/issues"
+  },
+  "homepage": "https://github.com/Astro36/portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "parcel-bundler": "^1.11.0"
+  }
+}
