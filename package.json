@@ -5,8 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "parcel page/index.html",
-    "dev": "parcel watch page/index.html",
+    "build": "parcel build page/index.html -d docs",
+    "clean": "rm -rf docs",
+    "dev": "parcel watch page/index.html -d docs",
     "lint": "eslint page/index.js",
     "lint:fix": "eslint page/index.js --fix"
   },

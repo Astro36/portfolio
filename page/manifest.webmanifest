@@ -1,0 +1,10 @@
+{
+    "name": "",
+    "short_name": "",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "description": "",
+    "icons": []
+}
