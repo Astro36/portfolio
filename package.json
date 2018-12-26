@@ -5,11 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "parcel build page/index.html -d docs",
+    "build": "webpack --mode=production",
     "clean": "rm -rf docs",
-    "dev": "parcel watch page/index.html -d docs",
-    "lint": "eslint page/index.js",
-    "lint:fix": "eslint page/index.js --fix"
+    "dev": "webpack --watch --mode=development",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --ignore-path .gitignore --fix"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,21 @@
   },
   "homepage": "https://github.com/Astro36/portfolio#readme",
   "devDependencies": {
-    "eslint": "^5.10.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-compat": "^2.6.3",
     "eslint-plugin-import": "^2.14.0",
-    "parcel-bundler": "^1.11.0"
+    "file-loader": "^3.0.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
   }
 }
