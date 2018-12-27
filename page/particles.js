@@ -1476,8 +1476,8 @@
     if (element instanceof Element && typeof config === 'object') {
       var canvasElement = document.createElement('canvas');
       canvasElement.className = 'particles-canvas';
-      canvasElement.style.width = "100vw";
-      canvasElement.style.height = "100vh";
+      canvasElement.style.width = '100%';
+      canvasElement.style.height = '100vh';
       element.appendChild(canvasElement);
       pJSDom.push(new pJS(element, config));
     } else {
@@ -1557,4 +1557,6 @@ const config = {
   retina_detect: true,
 };
 
-particles(document.querySelector('.particles'), config);
+window.addEventListener('load', () => {
+  // particles(document.querySelector('.particles'), config);
+});
