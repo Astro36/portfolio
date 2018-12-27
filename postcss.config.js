@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const precss = require('precss');
+const postcssPresetEnv = require('postcss-preset-env');
 
 module.exports = {
-  plugins: [precss],
+  plugins: [postcssPresetEnv({ stage: 0 })],
 };

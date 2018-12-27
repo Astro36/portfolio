@@ -5,11 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "parcel build page/index.html -d docs",
     "clean": "rm -rf docs",
-    "dev": "webpack --watch --mode=development",
-    "lint": "eslint . --ignore-path .gitignore",
-    "lint:fix": "eslint . --ignore-path .gitignore --fix"
+    "dev": "parcel page/index.html -d docs",
+    "lint": "eslint . --ignore-path .gitignore & stylelint page/*.css",
+    "lint:fix": "eslint . --ignore-path .gitignore --fix & stylelint page/*.css --fix"
   },
   "repository": {
     "type": "git",
@@ -21,22 +21,18 @@
     "url": "https://github.com/Astro36/portfolio/issues"
   },
   "homepage": "https://github.com/Astro36/portfolio#readme",
+  "dependencies": {
+    "material-design-icons": "^3.0.1"
+  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^2.1.0",
     "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-compat": "^2.6.3",
     "eslint-plugin-import": "^2.14.0",
-    "file-loader": "^3.0.1",
-    "postcss-loader": "^3.0.0",
-    "precss": "^4.0.0",
-    "style-loader": "^0.23.1",
+    "parcel-bundler": "^1.11.0",
+    "postcss-preset-env": "^6.5.0",
     "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2"
+    "stylelint-config-standard": "^18.2.0"
   }
 }

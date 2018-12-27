@@ -1,0 +1,38 @@
+.full-screen {
+  background-color: black;
+  height: 100vh;
+
+  & .container {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h1,
+    & h4 {
+      color: white;
+      text-align: center;
+    }
+
+    & .material-icons {
+      color: white;
+      display: block;
+      font-size: 48px;
+      text-align: center;
+    }
+  }
+
+  & .icon-container {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+
+    & .material-icons {
+      color: white;
+      font-size: 48px;
+    }
+  }
+}
