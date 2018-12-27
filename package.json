@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "parcel build page/index.html -d docs --no-source-maps",
+    "build": "parcel build page/index.html -d docs --public-url ./ --no-source-maps",
     "clean": "rm -rf dev docs",
     "dev": "parcel page/index.html -d dev",
     "lint": "eslint . --ignore-path .gitignore & stylelint page/*.css",

@@ -21,6 +21,7 @@ body {
   background-image: linear-gradient(black, var(--primary-color));
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', Sans-serif;
   font-size: 14px;
+  word-break: keep-all;
 }
 
 header.full-screen {
