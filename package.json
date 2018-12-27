@@ -5,8 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "parcel build page/index.html -d docs",
-    "clean": "rm -rf docs",
+    "build": "parcel build page/index.html -d docs --no-source-maps",
+    "clean": "rm -rf dev docs",
     "dev": "parcel page/index.html -d dev",
     "lint": "eslint . --ignore-path .gitignore & stylelint page/*.css",
     "lint:fix": "eslint . --ignore-path .gitignore --fix & stylelint page/*.css --fix"

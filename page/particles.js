@@ -1558,5 +1558,5 @@ const config = {
 };
 
 window.addEventListener('load', () => {
-  // particles(document.querySelector('.particles'), config);
+  particles(document.querySelector('.particles'), config);
 });
