@@ -18,23 +18,22 @@
 }
 
 body {
-  background-image: linear-gradient(black, var(--primary-color));
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', Sans-serif;
   font-size: 14px;
-  word-break: keep-all;
+  background-color: var(--primary-color);
 }
 
 header.full-screen {
   height: 100vh;
+  background-image: linear-gradient(black, var(--primary-color));
 
   & hgroup {
-    color: var(--text-light-color);
-    font-size: 2em;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: var(--text-light-color);
     text-align: center;
+    transform: translate(-50%, -50%);
 
     & :hover {
       text-shadow: 0 0 0.5rem var(--text-light-color);
@@ -50,21 +49,21 @@ header.full-screen {
     position: absolute;
     bottom: 16px;
     left: 50%;
-    transform: translate(-50%, 0);
     text-align: center;
+    transform: translate(-50%, 0);
 
     & .material-icons {
-      color: var(--text-light-color);
       font-size: 48px;
+      color: var(--text-light-color);
     }
   }
 }
 
 .container {
-  color: var(--text-light-color);
-  margin: 0 auto;
   max-width: 992px;
   padding: 1rem;
+  margin: 0 auto;
+  color: var(--text-light-color);
 }
 
 @media (--medium-viweport) {
@@ -88,8 +87,8 @@ footer {
   }
 
   & a {
-    color: var(--text-light-color);
     font-weight: bold;
+    color: var(--text-light-color);
     text-decoration: none;
   }
 }
