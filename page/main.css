@@ -1,5 +1,7 @@
-@import './normalize.css';
+@import './animations.css';
 @import './fonts.css';
+@import './normalize.css';
+@import './scrollbar.css';
 
 @custom-media --small-viweport (width < 576px);
 @custom-media --medium-viweport (576px <= width < 768px);
@@ -38,11 +40,6 @@ header.full-screen {
     & :hover {
       text-shadow: 0 0 0.5rem var(--text-light-color);
     }
-
-    & .material-icons {
-      display: block;
-      font-size: 48px;
-    }
   }
 
   & .icon-container {
@@ -51,6 +48,7 @@ header.full-screen {
     left: 50%;
     text-align: center;
     transform: translate(-50%, 0);
+    animation: bounce 1s infinite alternate;
 
     & .material-icons {
       font-size: 48px;
