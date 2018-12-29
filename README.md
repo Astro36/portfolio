@@ -4,7 +4,7 @@
 
 ## License
 
-[Material design icons](https://material.io/tools/icons/) is licensed under an [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) by Google.
+[Material design icons](https://material.io/tools/icons/) are licensed under an [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) by Google.
 
 [normalize.css](http://necolas.github.io/normalize.css/) is licensed under a [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md) by Nicolas Gallagher and Jonathan Neal.
 
