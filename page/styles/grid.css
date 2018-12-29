@@ -1,0 +1,31 @@
+@custom-media --small-viweport (width < 576px);
+@custom-media --medium-viweport (576px <= width < 768px);
+@custom-media --large-viweport (width >= 768px);
+
+.grid {
+  display: grid;
+  grid-gap: 0.5em;
+  margin: 16px 8px;
+
+  & > * {
+    margin: 0;
+  }
+}
+
+@media (--small-viweport) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (--medium-viweport) {
+  .grid {
+    grid-template-columns: repeat(2, calc((100% - 0.5em) / 2));
+  }
+}
+
+@media (--large-viweport) {
+  .grid {
+    grid-template-columns: repeat(3, calc((100% - 1em) / 3));
+  }
+}

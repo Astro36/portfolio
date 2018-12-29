@@ -1,0 +1,208 @@
+[
+    {
+        "name": "korean-school",
+        "description": "Fetches Korean Schools Data from Online",
+        "tech": [
+            "nodejs",
+            "javascript"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/korean-school"
+    },
+    {
+        "name": "kodict",
+        "description": "Provides Korean Dictionary Implements and Crawler",
+        "tech": [
+            "rust"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/Astro36/kodict"
+    },
+    {
+        "name": "korean-dictionary",
+        "description": "Provides Korean Dictionary Implements and Crawler for Node.js with Rust FFI",
+        "tech": [
+            "nodejs",
+            "javascript",
+            "rust"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/Astro36/korean-dictionary"
+    },
+    {
+        "name": "hanguler",
+        "description": "Simple Hangul Manipulating Library",
+        "tech": [
+            "nodejs",
+            "javascript"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/hanguler"
+    },
+    {
+        "name": "kokoa",
+        "description": "Unsupervised Learning Korean Kernel Object Analyzer",
+        "tech": [
+            "nodejs",
+            "javascript",
+            "python"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/kokoa"
+    },
+    {
+        "name": "word2vec4node",
+        "description": "Google Word2Vec Interface for Node.js with N-API",
+        "tech": [
+            "nodejs",
+            "javascript",
+            "cpp"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/word2vec4node"
+    },
+    {
+        "name": "touch-music",
+        "description": "Super Easy Music Finder for KAIST Creative Team Coding Challenge",
+        "tech": [
+            "nodejs",
+            "electron",
+            "html",
+            "css",
+            "javascript",
+            "python"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/touch-music"
+    },
+    {
+        "name": "korean-music",
+        "description": "Fetches Korean Music Data from Online",
+        "tech": [
+            "nodejs",
+            "javascript"
+        ],
+        "license": "LGPL-3.0",
+        "url": "https://github.com/Astro36/korean-music"
+    },
+    {
+        "name": "word-chain-bot",
+        "description": "Korean Word Chain Bot",
+        "tech": [
+            "nodejs",
+            "javascript"
+        ],
+        "license": "LGPL-3.0",
+        "url": "https://github.com/Astro36/word-chain-bot"
+    },
+    {
+        "name": "materialize-jekyll",
+        "description": "Materialize Theme for Jekyll, Github Pages",
+        "tech": [
+            "jekyll",
+            "html",
+            "css",
+            "sass",
+            "javascript"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/Astro36/materialize-jekyll"
+    },
+    {
+        "name": "plus-friend-bot",
+        "description": "Kakao Plus Friend Auto Reply Bot Framework for Node.js",
+        "tech": [
+            "nodejs",
+            "javascript"
+        ],
+        "license": "LGPL-3.0",
+        "url": "https://github.com/Astro36/plus-friend-bot"
+    },
+    {
+        "name": "flutter-music-plugin",
+        "description": "Flutter Music Plugin",
+        "tech": [
+            "flutter",
+            "android",
+            "java",
+            "dart"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/Astro36/flutter-music-plugin"
+    },
+    {
+        "name": "deneb",
+        "description": "Integrated User Management System",
+        "tech": [
+            "apache",
+            "php",
+            "html",
+            "css",
+            "javascript"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/CosmosA/Deneb"
+    },
+    {
+        "name": "altair",
+        "description": "Anonymous Writing Board",
+        "tech": [
+            "apache",
+            "php",
+            "html",
+            "css",
+            "javascript"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/CosmosA/Altair"
+    },
+    {
+        "name": "metis",
+        "description": "Android Wallpaper Stealer",
+        "tech": [
+            "android",
+            "java"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/CosmosA/Metis"
+    },
+    {
+        "name": "vokkit",
+        "description": "Voxel Server Launcher accessed via a Web Browser (Team Project)",
+        "tech": [
+            "nodejs",
+            "html",
+            "css",
+            "sass",
+            "javascript"
+        ],
+        "license": "Apache",
+        "url": "https://github.com/Vokkit/Vokkit"
+    },
+    {
+        "name": "korean-school-schedule-viewer",
+        "description": "Korean School Schedule Viewer",
+        "tech": [
+            "nodejs",
+            "electron",
+            "html",
+            "css",
+            "javascript"
+        ],
+        "license": "GPL-3.0",
+        "url": "https://github.com/Astro36/korean-school-schedule-viewer"
+    },
+    {
+        "name": "d01t-blog-theme",
+        "description": "Do IT Team Bog Theme (Team Project)",
+        "tech": [
+            "jekyll",
+            "html",
+            "css",
+            "sass",
+            "javascript"
+        ],
+        "license": "UNLICENSED",
+        "url": "https://github.com/D01T/D01T.github.io"
+    }
+]

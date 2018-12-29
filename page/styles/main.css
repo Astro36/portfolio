@@ -1,12 +1,13 @@
-@import './animations.css';
-@import './card.css';
-@import './fonts.css';
-@import './normalize.css';
-@import './scrollbar.css';
-
 @custom-media --small-viweport (width < 576px);
 @custom-media --medium-viweport (576px <= width < 768px);
 @custom-media --large-viweport (width >= 768px);
+
+@import './animations.css';
+@import './card.css';
+@import './fonts.css';
+@import './grid.css';
+@import './normalize.css';
+@import './scrollbar.css';
 
 :root {
   --primary-color: #1a237e;
@@ -18,7 +19,7 @@
   --text-color: #212121;
   --text-dark-color: #000;
   --text-light-color: #fff;
-  --background-color: #fff;
+  --background-color: #fafafa;
   --background-dark-color: #1a237e;
   --background-light-color: #fff;
 }
@@ -63,6 +64,21 @@ header.full-screen {
       }
     }
   }
+}
+
+.license {
+  padding: 4px;
+  font-size: 0.5em;
+  color: var(--text-light-color);
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.logo {
+  margin: 4px;
+  object-fit: contain;
 }
 
 .container {

@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "parcel build page/index.html -d docs --public-url ./ --no-source-maps",
-    "clean": "rm -rf dev docs",
+    "clean": "rm -rf docs",
     "dev": "parcel page/index.html -d dev",
     "lint": "eslint . --ignore-path .gitignore --ignore-pattern docs/ & stylelint page/styles/*.css",
     "lint:fix": "eslint . --ignore-path .gitignore --ignore-pattern docs/ --fix & stylelint page/styles/*.css --fix"
