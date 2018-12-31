@@ -14,9 +14,9 @@ const createLicenseBadgeHtml = (license) => {
 const createLogoHtml = (logo, size = '24px') => {
   const file = logo.toLowerCase();
   if (file in images) {
-    return `<img class="logo lazy" data-src="${images[file]}" alt=${logo} width="${size}" height="${size}"/>`;
+    return `<img class="logo lazy" data-src="${images[file]}" title=${logo} alt=${logo} width="${size}" height="${size}"/>`;
   }
-  return logo;
+  return `<img class="logo lazy" data-src="${images.photo}" title=${logo} alt=${logo} width="${size}" height="${size}"/>`;
 };
 
 window.addEventListener('DOMContentLoaded', () => {
