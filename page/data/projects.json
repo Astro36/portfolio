@@ -123,9 +123,9 @@
         "description": "Flutter Music Plugin",
         "tech": [
             "flutter",
+            "dart",
             "android",
-            "java",
-            "dart"
+            "java"
         ],
         "license": "MIT",
         "url": "https://github.com/Astro36/flutter-music-plugin"

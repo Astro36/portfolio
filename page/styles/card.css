@@ -1,6 +1,7 @@
 .card {
   padding: 20px 16px;
   margin: 16px 8px;
+  overflow: auto;
   color: var(--text-color);
   background-color: var(--background-color);
   border-radius: 4px;

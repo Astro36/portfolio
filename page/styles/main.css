@@ -4,6 +4,7 @@
 
 @import './animations.css';
 @import './card.css';
+@import './container.css';
 @import './fonts.css';
 @import './grid.css';
 @import './normalize.css';
@@ -12,7 +13,7 @@
 :root {
   --primary-color: #1a237e;
   --primary-dark-color: #000051;
-  --primary-light-color: #534bae;
+  --primary-light-color: #283593;
   --secondary-color: #40c4ff;
   --secondary-dark-color: #0094cc;
   --secondary-light-color: #82f7ff;
@@ -66,6 +67,20 @@ header.full-screen {
   }
 }
 
+.profile {
+  float: left;
+  padding: 8px;
+  margin-right: 16px;
+  border: #eee solid 1px;
+  border-radius: 4px;
+}
+
+@media (--small-viweport) {
+  .profile {
+    float: none;
+  }
+}
+
 .info-list {
   padding: 0;
   list-style: none;
@@ -109,13 +124,25 @@ header.full-screen {
   }
 }
 
+.interest {
+  padding: 8px;
+  margin: 2px;
+  font-size: 0.75rem;
+  line-height: 40px;
+  color: var(--text-light-color);
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: var(--primary-light-color);
+  border-radius: 16px;
+}
+
 .license {
   padding: 4px;
   font-size: 0.5em;
   color: var(--text-light-color);
   white-space: nowrap;
   vertical-align: middle;
-  background-color: var(--primary-color);
+  background-color: var(--primary-light-color);
   border-radius: 4px;
 }
 
@@ -123,28 +150,8 @@ header.full-screen {
   padding: 2px;
   margin: 2px;
   object-fit: contain;
-  background-color: var(--background-color);
   border: #eee solid 1px;
   border-radius: 4px;
-}
-
-.container {
-  max-width: 992px;
-  padding: 1rem;
-  margin: 0 auto;
-  color: var(--text-light-color);
-}
-
-@media (--medium-viweport) {
-  .container {
-    width: 90%;
-  }
-}
-
-@media (--large-viweport) {
-  .container {
-    width: 80%;
-  }
 }
 
 footer {
@@ -153,11 +160,11 @@ footer {
   & .container {
     display: flex;
     justify-content: space-between;
-  }
 
-  & a {
-    font-weight: bold;
-    color: var(--text-light-color);
-    text-decoration: none;
+    & a {
+      font-weight: bold;
+      color: var(--text-light-color);
+      text-decoration: none;
+    }
   }
 }
