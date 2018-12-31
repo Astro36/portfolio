@@ -70,6 +70,7 @@
             "html",
             "css",
             "javascript",
+            "jquery",
             "python"
         ],
         "license": "GPL-3.0",
@@ -103,7 +104,8 @@
             "html",
             "css",
             "sass",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "MIT",
         "url": "https://github.com/Astro36/materialize-jekyll"
@@ -138,7 +140,8 @@
             "php",
             "html",
             "css",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "GPL-3.0",
         "url": "https://github.com/CosmosA/Deneb"
@@ -151,7 +154,8 @@
             "php",
             "html",
             "css",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "GPL-3.0",
         "url": "https://github.com/CosmosA/Altair"
@@ -174,7 +178,8 @@
             "html",
             "css",
             "sass",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "Apache",
         "url": "https://github.com/Vokkit/Vokkit"
@@ -187,7 +192,8 @@
             "electron",
             "html",
             "css",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "GPL-3.0",
         "url": "https://github.com/Astro36/korean-school-schedule-viewer"
@@ -200,7 +206,8 @@
             "html",
             "css",
             "sass",
-            "javascript"
+            "javascript",
+            "jquery"
         ],
         "license": "UNLICENSED",
         "url": "https://github.com/D01T/D01T.github.io"

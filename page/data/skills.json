@@ -8,6 +8,7 @@
         "css",
         "sass",
         "javascript",
+        "jquery",
         "java",
         "jekyll",
         "sqlite"
@@ -24,6 +25,7 @@
         "c",
         "cpp",
         "less",
+        "vue",
         "rust",
         "webassembly"
     ]
