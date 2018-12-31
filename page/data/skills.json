@@ -1,0 +1,29 @@
+{
+    "strong": [
+        "nodejs",
+        "express",
+        "electron",
+        "html",
+        "pug",
+        "css",
+        "sass",
+        "javascript",
+        "java",
+        "jekyll",
+        "sqlite"
+    ],
+    "knowledgeable": [
+        "android",
+        "kotlin",
+        "dart",
+        "typescript",
+        "python",
+        "apache",
+        "php",
+        "c",
+        "cpp",
+        "less",
+        "rust",
+        "webassembly"
+    ]
+}

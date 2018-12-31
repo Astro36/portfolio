@@ -66,6 +66,44 @@ header.full-screen {
   }
 }
 
+.info-list {
+  padding: 0;
+  list-style: none;
+
+  & li {
+    margin-bottom: 8px;
+
+    & a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    & a,
+    & span {
+      padding-left: 8px;
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+    }
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 1em) / 2));
+  grid-column-gap: 1em;
+}
+
+@media (--small-viweport) {
+  .skills-grid {
+    grid-template-columns: 100%;
+
+    & .space {
+      height: 1em;
+    }
+  }
+}
+
 .license {
   padding: 4px;
   font-size: 0.5em;
@@ -77,8 +115,12 @@ header.full-screen {
 }
 
 .logo {
-  margin: 4px;
+  padding: 2px;
+  margin: 2px;
   object-fit: contain;
+  background-color: var(--background-color);
+  border: #eee solid 1px;
+  border-radius: 4px;
 }
 
 .container {

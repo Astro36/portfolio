@@ -5,10 +5,11 @@
   background-color: var(--background-color);
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 1s;
+  transition: opacity 1s, transform 0.5s;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
   }
 
   &.invisible {
@@ -19,11 +20,14 @@
     opacity: 1;
   }
 
-  & :first-child {
+  & h1:first-child,
+  & h2:first-child,
+  & h3:first-child,
+  & h4:first-child {
     margin-top: 0;
   }
 
-  & :last-child {
+  & p:last-child {
     margin-bottom: 0;
   }
 
