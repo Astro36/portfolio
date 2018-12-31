@@ -92,6 +92,10 @@ header.full-screen {
   display: grid;
   grid-template-columns: repeat(2, calc((100% - 1em) / 2));
   grid-column-gap: 1em;
+
+  & .space {
+    display: none;
+  }
 }
 
 @media (--small-viweport) {
@@ -99,6 +103,7 @@ header.full-screen {
     grid-template-columns: 100%;
 
     & .space {
+      display: block;
       height: 1em;
     }
   }
