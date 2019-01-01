@@ -1,11 +1,11 @@
 {
     "name": "My Portfolio",
     "short_name": "Portfolio",
-    "start_url": "./?utm_source=homescreen",
+    "start_url": "/portfolio/?utm_source=homescreen",
     "display": "standalone",
-    "background_color": "#1a237e",
-    "theme_color": "#000051",
-    "description": "My Portfolio",
+    "background_color": "#303f9f",
+    "theme_color": "#303f9f",
+    "description": "Seungjae Park’s Portfolio",
     "icons": [
         {
             "src": "images/touch/icon48.png",

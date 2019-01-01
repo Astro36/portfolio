@@ -11,18 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#000051">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="msapplication-navbutton-color" content="#000051">
+    <meta name="theme-color" content="#1a237e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="#1a237e">
 
     <!-- Fullscreen -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Icon -->
-    <link rel="icon" sizes="48x48" href="./images/touch/icon48.png">
-    <link rel="icon" sizes="96x96" href="./images/touch/icon96.png">
-    <link rel="icon" sizes="192x192" href="./images/touch/icon192.png">
+    <link rel="icon" sizes="any" href="./images/touch/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-startup-image" href="./images/touch/icon192.png">
     <link rel="apple-touch-icon" href="./images/touch/icon192.png">
     <!-- <link rel="apple-touch-icon" sizes="76x76" href="icon-ipad.png">
@@ -38,13 +36,13 @@
     <meta property="og:url" content="https://astro36.github.io/portfolio/">
     <meta property="og:title" content="My Portfolio">
     <meta property="og:description" content="Seungjae Park’s Portfolio">
-    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:image" content="./images/touch/icon512.png">
 
     <!-- Twitter Summary Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="My Portfolio">
     <meta name="twitter:description" content="Seungjae Park’s Portfolio">
-    <!-- <meta name="twitter:image" content=""> -->
+    <meta name="twitter:image" content="./images/touch/icon512.png">
 
     <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" type="text/css" href="./styles/main.css" media="screen">
@@ -67,7 +65,7 @@
             <h1>About</h1>
             <article class="card invisible">
                 <h2>Profile</h2>
-                <img class="profile" src="./images/touch/icon192.png" alt="profile" width="120px" height="120px">
+                <img class="profile" src="./images/touch/icon.svg" alt="profile" width="120px" height="120px">
                 <ul class="info-list no-decorater">
                     <li><i class="material-icons">location_on</i><span>Republic of Korea</span></li>
                     <li><i class="material-icons">email</i><a href="mailto:astr36@naver.com">astr36@naver.com</a></li>
@@ -81,7 +79,7 @@
                     <span class="interest">Deep Learning</span>
                     <span class="interest">Natural Language Processing</span>
                     <span class="interest">Progressive Web App</span>
-                    <span class="interest">Web Design</span>
+                    <span class="interest">Design</span>
                     <span class="interest">Performance</span>
                     <span class="interest">Multithreaded Programming</span>
                 </p>
@@ -101,12 +99,35 @@
         </section>
         <section class="container">
             <h1>Projects</h1>
-            <article id="my-projects" class="grid"></article>
+            <article id="pinned-projects" class="grid"></article>
+            <article class="card invisible">
+                <h2>Others</h2>
+                <ul id="other-projects" class="project-list no-decorater"></ul>
+            </article>
+        </section>
+        <section class="container">
+            <h1>Resources</h1>
+            <article class="card invisible">
+                <h2>Portfolio</h2>
+                <img class="logo" src="./images/nodejs.svg" title="nodejs" alt="nodejs" width="24px" height="24px">
+                <img class="logo" src="./images/html.svg" title="html" alt="html" width="24px" height="24px">
+                <img class="logo" src="./images/css.svg" title="css" alt="css" width="24px" height="24px">
+                <img class="logo" src="./images/postcss.svg" title="postcss" alt="postcss" width="24px" height="24px">
+                <img class="logo" src="./images/javascript.svg" title="javascript" alt="javascript" width="24px" height="24px">
+                <p class="license-message">
+                    Flutter Logo is licensed under a CC BY 3.0 by Dart.<br>
+                    Material design icons are licensed under an Apache License 2.0 by Google.<br>
+                    normalize.css is licensed under a MIT License by Nicolas Gallagher and Jonathan Neal.<br>
+                    particles.js is licensed under a MIT License by Vincent Garreau.<br>
+                    SVG Logos are licensed under a CC0 1.0 by Gil Barbara.<br>
+                    Spoqa Han Sans is licensed under a SIL Open Font License by Spoqa.
+                </p>
+            </article>
         </section>
     </main>
     <footer>
         <div class="container">
-            <span>© 2019 <a href="https://github.com/Astro36">Astro36</a></span>
+            <span>© 2019 <a href="https://github.com/Astro36">Seungjae Park</a></span>
             <br>
             <span>View on <a href="https://github.com/Astro36/portfolio">GitHub</a></span>
         </div>

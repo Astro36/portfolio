@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   padding: 20px 16px;
   margin: 16px 8px;
   overflow: auto;
@@ -8,7 +9,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: opacity 1s, transform 0.5s;
 
-  &:hover {
+  &.elevation:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
   }
@@ -33,11 +34,12 @@
   }
 
   & .actions {
+    position: absolute;
+    right: 12px;
+    bottom: 18px;
     padding-top: 8px;
     margin-bottom: -12px;
     text-align: right;
-    border: none;
-    border-top: 1px solid #e0e0e0;
 
     & > * {
       color: var(--text-color);
