@@ -106,7 +106,7 @@ header.full-screen {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, calc((100% - 1em) / 2));
-  grid-column-gap: 2em;
+  grid-column-gap: 1em;
 
   & .space {
     display: none;

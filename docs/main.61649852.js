@@ -10,69 +10,69 @@ module.exports={pinned:[{name:"korean-school",description:"Fetches Korean School
 module.exports={strong:["nodejs","express","electron","html","pug","css","sass","postcss","javascript","jquery","java","jekyll","sqlite"],knowledgeable:["android","kotlin","flutter","dart","typescript","python","apache","php","c","cpp","less","vue","rust","webassembly"]};
 },{}],"aqXD":[function(require,module,exports) {
 module.exports="android.82bd187f.svg";
-},{}],"D6LR":[function(require,module,exports) {
-module.exports="apache.814b53c0.svg";
-},{}],"eLHV":[function(require,module,exports) {
-module.exports="c.bb60bf3d.svg";
 },{}],"ICUN":[function(require,module,exports) {
 module.exports="cpp.7700291d.svg";
 },{}],"Ly5E":[function(require,module,exports) {
 module.exports="css.23700ace.svg";
+},{}],"D6LR":[function(require,module,exports) {
+module.exports="apache.814b53c0.svg";
+},{}],"eLHV":[function(require,module,exports) {
+module.exports="c.bb60bf3d.svg";
 },{}],"+ocN":[function(require,module,exports) {
 module.exports="dart.aa6e09d4.svg";
+},{}],"H/Cv":[function(require,module,exports) {
+module.exports="github.c966d396.svg";
+},{}],"IBEi":[function(require,module,exports) {
+module.exports="flutter.870f22e7.svg";
+},{}],"M1Ix":[function(require,module,exports) {
+module.exports="html.d2709353.svg";
+},{}],"mgm0":[function(require,module,exports) {
+module.exports="javascript.8f854196.svg";
 },{}],"lZAC":[function(require,module,exports) {
 module.exports="electron.44f6d40a.svg";
 },{}],"c0cJ":[function(require,module,exports) {
 module.exports="express.a9c830e0.svg";
-},{}],"IBEi":[function(require,module,exports) {
-module.exports="flutter.870f22e7.svg";
-},{}],"H/Cv":[function(require,module,exports) {
-module.exports="github.c966d396.svg";
-},{}],"M1Ix":[function(require,module,exports) {
-module.exports="html.d2709353.svg";
 },{}],"qLbh":[function(require,module,exports) {
 module.exports="java.7ff1a0cf.svg";
-},{}],"mgm0":[function(require,module,exports) {
-module.exports="javascript.8f854196.svg";
 },{}],"DLxm":[function(require,module,exports) {
 module.exports="jekyll.a68731a5.svg";
 },{}],"1kvV":[function(require,module,exports) {
 module.exports="jquery.4b0bf22a.svg";
 },{}],"uxS/":[function(require,module,exports) {
 module.exports="kotlin.8f1e2834.svg";
-},{}],"J7ZU":[function(require,module,exports) {
-module.exports="less.c24d288a.svg";
-},{}],"zvs3":[function(require,module,exports) {
-module.exports="markdown.4893d28b.svg";
 },{}],"dYE+":[function(require,module,exports) {
 module.exports="nodejs.bc32eb69.svg";
+},{}],"zvs3":[function(require,module,exports) {
+module.exports="markdown.4893d28b.svg";
+},{}],"IznM":[function(require,module,exports) {
+module.exports="postcss.4b5afd73.svg";
+},{}],"J7ZU":[function(require,module,exports) {
+module.exports="less.c24d288a.svg";
 },{}],"iX6h":[function(require,module,exports) {
 module.exports="photo.240255d9.svg";
 },{}],"M6gP":[function(require,module,exports) {
 module.exports="php.9c2b4a38.svg";
-},{}],"IznM":[function(require,module,exports) {
-module.exports="postcss.4b5afd73.svg";
-},{}],"3NsP":[function(require,module,exports) {
-module.exports="pug.de35cc58.svg";
 },{}],"DatQ":[function(require,module,exports) {
 module.exports="python.72d48b2f.svg";
-},{}],"d6kC":[function(require,module,exports) {
-module.exports="rust.90b2be88.svg";
+},{}],"3NsP":[function(require,module,exports) {
+module.exports="pug.de35cc58.svg";
 },{}],"Kpyv":[function(require,module,exports) {
 module.exports="sass.f0d43673.svg";
+},{}],"d6kC":[function(require,module,exports) {
+module.exports="rust.90b2be88.svg";
 },{}],"SH2d":[function(require,module,exports) {
 module.exports="sqlite.8bc4754c.svg";
-},{}],"14vO":[function(require,module,exports) {
-module.exports="swift.8d04127f.svg";
 },{}],"Pv0J":[function(require,module,exports) {
 module.exports="typescript.ac3862dc.svg";
+},{}],"14vO":[function(require,module,exports) {
+module.exports="swift.8d04127f.svg";
 },{}],"nbKG":[function(require,module,exports) {
 module.exports="vue.676a9390.svg";
 },{}],"MOQT":[function(require,module,exports) {
 module.exports="webassembly.077410a9.svg";
 },{}],"uUbn":[function(require,module,exports) {
-module.exports={android:require("./android.svg"),apache:require("./apache.svg"),c:require("./c.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),dart:require("./dart.svg"),electron:require("./electron.svg"),express:require("./express.svg"),flutter:require("./flutter.svg"),github:require("./github.svg"),html:require("./html.svg"),java:require("./java.svg"),javascript:require("./javascript.svg"),jekyll:require("./jekyll.svg"),jquery:require("./jquery.svg"),kotlin:require("./kotlin.svg"),less:require("./less.svg"),markdown:require("./markdown.svg"),nodejs:require("./nodejs.svg"),photo:require("./photo.svg"),php:require("./php.svg"),postcss:require("./postcss.svg"),pug:require("./pug.svg"),python:require("./python.svg"),rust:require("./rust.svg"),sass:require("./sass.svg"),sqlite:require("./sqlite.svg"),swift:require("./swift.svg"),typescript:require("./typescript.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg")};
-},{"./android.svg":"aqXD","./apache.svg":"D6LR","./c.svg":"eLHV","./cpp.svg":"ICUN","./css.svg":"Ly5E","./dart.svg":"+ocN","./electron.svg":"lZAC","./express.svg":"c0cJ","./flutter.svg":"IBEi","./github.svg":"H/Cv","./html.svg":"M1Ix","./java.svg":"qLbh","./javascript.svg":"mgm0","./jekyll.svg":"DLxm","./jquery.svg":"1kvV","./kotlin.svg":"uxS/","./less.svg":"J7ZU","./markdown.svg":"zvs3","./nodejs.svg":"dYE+","./photo.svg":"iX6h","./php.svg":"M6gP","./postcss.svg":"IznM","./pug.svg":"3NsP","./python.svg":"DatQ","./rust.svg":"d6kC","./sass.svg":"Kpyv","./sqlite.svg":"SH2d","./swift.svg":"14vO","./typescript.svg":"Pv0J","./vue.svg":"nbKG","./webassembly.svg":"MOQT"}],"NhNV":[function(require,module,exports) {
+module.exports={android:require("./android.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),apache:require("./apache.svg"),c:require("./c.svg"),dart:require("./dart.svg"),github:require("./github.svg"),flutter:require("./flutter.svg"),html:require("./html.svg"),javascript:require("./javascript.svg"),electron:require("./electron.svg"),express:require("./express.svg"),java:require("./java.svg"),jekyll:require("./jekyll.svg"),jquery:require("./jquery.svg"),kotlin:require("./kotlin.svg"),nodejs:require("./nodejs.svg"),markdown:require("./markdown.svg"),postcss:require("./postcss.svg"),less:require("./less.svg"),photo:require("./photo.svg"),php:require("./php.svg"),python:require("./python.svg"),pug:require("./pug.svg"),sass:require("./sass.svg"),rust:require("./rust.svg"),sqlite:require("./sqlite.svg"),typescript:require("./typescript.svg"),swift:require("./swift.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg")};
+},{"./android.svg":"aqXD","./cpp.svg":"ICUN","./css.svg":"Ly5E","./apache.svg":"D6LR","./c.svg":"eLHV","./dart.svg":"+ocN","./github.svg":"H/Cv","./flutter.svg":"IBEi","./html.svg":"M1Ix","./javascript.svg":"mgm0","./electron.svg":"lZAC","./express.svg":"c0cJ","./java.svg":"qLbh","./jekyll.svg":"DLxm","./jquery.svg":"1kvV","./kotlin.svg":"uxS/","./nodejs.svg":"dYE+","./markdown.svg":"zvs3","./postcss.svg":"IznM","./less.svg":"J7ZU","./photo.svg":"iX6h","./php.svg":"M6gP","./python.svg":"DatQ","./pug.svg":"3NsP","./sass.svg":"Kpyv","./rust.svg":"d6kC","./sqlite.svg":"SH2d","./typescript.svg":"Pv0J","./swift.svg":"14vO","./vue.svg":"nbKG","./webassembly.svg":"MOQT"}],"NhNV":[function(require,module,exports) {
 "use strict";var n=a(require("../data/projects.json")),e=a(require("../data/skills.json")),t=a(require("../images/*.svg"));function a(n){return n&&n.__esModule?n:{default:n}}var c=function(n){return'<span class="badge">'.concat(n,"</span>")},o=function(n){var e=n;return n.length<=4&&(e+=" License"),'<span class="license-badge">'.concat(e,"</span>")},r=function(n){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"24px",a=n.toLowerCase();return a in t.default?'<img class="logo lazy" data-src="'.concat(t.default[a],'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>'):'<img class="logo lazy" data-src="'.concat(t.default.photo,'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>')},i=function(n){var e=n.name,t=n.description,a=n.tech,c=n.license,i=n.url,s='<div class="card elevation invisible">';return s+="<h2>".concat(e," ").concat(o(c),"</h2>"),s+="<p>".concat(t,"</p>"),a&&Array.isArray(a)&&(s+=a.map(function(n){return r(n)}).join("")),i&&(s+='<div class="actions"><a class="material-icons" href="'.concat(i,'">call_made</a></div>')),s+="</div>"},s=function(n){var e=n.name,t=n.description,a=n.tech,i=n.license,s=n.url,l="";return l+="<li>",l+="<h3>",l+=s?'<a href="'.concat(s,'">').concat(e,"</a> ").concat(o(i)," ").concat(a.map(function(n){return r(n,"16px")}).join("")):"".concat(e," ").concat(o(i)," ").concat(c("Private")," ").concat(a.map(function(n){return r(n,"16px")}).join("")),l+="</h3>",l+="<span>".concat(t,"</span>"),l+="</li>"},l=function(n,e){return n.name.localeCompare(e.name)};window.addEventListener("DOMContentLoaded",function(){document.querySelector("#strong-skills").insertAdjacentHTML("beforeend",e.default.strong.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#knowledgeable-skills").insertAdjacentHTML("beforeend",e.default.knowledgeable.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#pinned-projects").innerHTML=n.default.pinned.sort(l).map(i).join(""),document.querySelector("#other-projects").innerHTML=n.default.others.sort(l).map(s).join("")});
 },{"../data/projects.json":"cvHM","../data/skills.json":"x55J","../images/*.svg":"uUbn"}],"Va+o":[function(require,module,exports) {
 module.exports={particles:{number:{value:60,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"}},opacity:{value:.5,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{repulse:{distance:200,duration:.4},push:{particles_nb:4}}},retina_detect:!0};
