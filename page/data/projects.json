@@ -34,7 +34,7 @@
         },
         {
             "name": "touch-music",
-            "description": "Super Easy Music Finder for KAIST Creative Team Coding Challenge",
+            "description": "Super Easy Music Finder for KAIST Creative Team Coding Challenge (Team Project)",
             "tech": [
                 "nodejs",
                 "electron",
@@ -220,7 +220,7 @@
                 "javascript",
                 "webassembly"
             ],
-            "license": "GPL-3.0",
+            "license": "MIT",
             "url": "https://github.com/Astro36/particle-manager"
         },
         {
