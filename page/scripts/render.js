@@ -6,11 +6,14 @@ import images from '../images/*.svg';
 const createBadgeHtml = text => `<span class="badge">${text}</span>`;
 
 const createLicenseBadgeHtml = (license) => {
-  let text = license;
-  if (license.length <= 4) {
-    text += ' License';
+  if (license) {
+    let text = license;
+    if (license.length <= 4) {
+      text += ' License';
+    }
+    return `<span class="license-badge">${text}</span>`;
   }
-  return `<span class="license-badge">${text}</span>`;
+  return '';
 };
 
 const createLogoHtml = (logo, size = '24px') => {

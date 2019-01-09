@@ -65,7 +65,7 @@
                 "javascript",
                 "cpp"
             ],
-            "license": "GPL-3.0",
+            "license": "LGPL-3.0",
             "url": "https://github.com/Astro36/word2vec4node"
         }
     ],
@@ -95,7 +95,6 @@
                 "javascript",
                 "jquery"
             ],
-            "license": "UNLICENSED",
             "url": "https://github.com/D01T/D01T.github.io"
         },
         {
@@ -244,7 +243,7 @@
                 "javascript",
                 "jquery"
             ],
-            "license": "Apache",
+            "license": "Apache-2.0",
             "url": "https://github.com/Vokkit/Vokkit"
         }
     ]
