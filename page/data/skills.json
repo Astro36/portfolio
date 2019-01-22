@@ -6,6 +6,7 @@
         "html",
         "pug",
         "css",
+        "less",
         "sass",
         "postcss",
         "javascript",
@@ -25,7 +26,6 @@
         "php",
         "c",
         "cpp",
-        "less",
         "vue",
         "rust",
         "webassembly"
