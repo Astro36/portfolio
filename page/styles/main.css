@@ -110,8 +110,8 @@ header.full-screen {
 
   & li {
     display: flex;
-    margin-bottom: 16px;
     align-items: center;
+    margin-bottom: 16px;
 
     & img.school {
       width: auto;

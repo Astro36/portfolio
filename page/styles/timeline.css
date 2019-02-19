@@ -1,13 +1,13 @@
 .timeline {
   position: relative;
-  margin-left: 100px;
   padding: 0;
-  border-left: 4px solid var(--primary-light-color);
+  margin-left: 100px;
   list-style: none;
-  
+  border-left: 4px solid var(--primary-light-color);
+
   & .event {
-    margin: 32px 16px;  
     position: relative;
+    margin: 32px 16px;
 
     & img {
       width: auto;
@@ -15,24 +15,24 @@
       border-radius: 8px;
     }
 
-    &:before {
-      content: attr(data-date);
+    &::before {
       position: absolute;
       left: -100px;
-      text-align: right;
       width: 60px;
+      text-align: right;
+      content: attr(data-date);
     }
 
-    &:after {
-      content: "";
+    &::after {
       position: absolute;
-      box-shadow: 0 0 0 4px var(--primary-light-color);    
-      left: -24px;
-      background-color: #fff;
-      border-radius: 50%;  
-      height: 12px;
-      width: 12px;
       top: 6px;
+      left: -24px;
+      width: 12px;
+      height: 12px;
+      content: "";
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--primary-light-color);
     }
   }
 }

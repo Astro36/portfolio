@@ -1,6 +1,7 @@
 import './particles';
 import './render';
 import particlesConfig from '../data/particles.config.json';
+import activityImages from '../images/activity/*.*';
 
 const fadeAnimationObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
@@ -16,7 +17,15 @@ const lazyImageObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const element = entry.target;
-      element.src = element.dataset.src;
+      const { src } = element.dataset;
+      const file = src.split('/').reverse()[0];
+      const fileName = file.replace(/\..+$/, '');
+      const fileExtension = file.match(/\.(.+)$/)[1];
+      if (fileName in activityImages) {
+        element.src = activityImages[fileName][fileExtension];
+      } else {
+        element.src = src;
+      }
       element.classList.remove('lazy');
       observer.unobserve(element);
     }
