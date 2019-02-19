@@ -1,0 +1,38 @@
+.timeline {
+  position: relative;
+  margin-left: 100px;
+  padding: 0;
+  border-left: 4px solid var(--primary-light-color);
+  list-style: none;
+  
+  & .event {
+    margin: 32px 16px;  
+    position: relative;
+
+    & img {
+      width: auto;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    &:before {
+      content: attr(data-date);
+      position: absolute;
+      left: -100px;
+      text-align: right;
+      width: 60px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      box-shadow: 0 0 0 4px var(--primary-light-color);    
+      left: -24px;
+      background-color: #fff;
+      border-radius: 50%;  
+      height: 12px;
+      width: 12px;
+      top: 6px;
+    }
+  }
+}

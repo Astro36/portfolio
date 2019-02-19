@@ -9,6 +9,7 @@
 @import './grid.css';
 @import './normalize.css';
 @import './scrollbar.css';
+@import './timeline.css';
 
 :root {
   --primary-color: #303f9f;
@@ -103,6 +104,40 @@ header.full-screen {
   }
 }
 
+.education-list {
+  padding: 8px;
+  list-style: none;
+
+  & li {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+
+    & img.school {
+      width: auto;
+      height: 36px;
+    }
+
+    & .name {
+      display: block;
+      padding-left: 12px;
+      margin-bottom: 4px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    & .date {
+      display: block;
+      padding-left: 12px;
+      font-size: 14px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, calc((100% - 1em) / 2));
@@ -125,15 +160,10 @@ header.full-screen {
 }
 
 .interest {
-  padding: 8px;
-  margin: 2px;
-  font-size: 0.75rem;
-  line-height: 40px;
-  color: var(--text-light-color);
+  margin: 6px;
+  line-height: 26px;
+  color: var(--primary-color);
   white-space: nowrap;
-  vertical-align: middle;
-  background-color: var(--primary-light-color);
-  border-radius: 16px;
 }
 
 .logo {
