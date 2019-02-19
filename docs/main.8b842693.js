@@ -12,6 +12,8 @@ module.exports={strong:["nodejs","express","electron","html","pug","css","less",
 module.exports="android.82bd187f.svg";
 },{}],"D6LR":[function(require,module,exports) {
 module.exports="apache.814b53c0.svg";
+},{}],"f1Hj":[function(require,module,exports) {
+module.exports="baekseok.c7241b66.svg";
 },{}],"eLHV":[function(require,module,exports) {
 module.exports="c.bb60bf3d.svg";
 },{}],"ICUN":[function(require,module,exports) {
@@ -22,12 +24,14 @@ module.exports="css.23700ace.svg";
 module.exports="dart.aa6e09d4.svg";
 },{}],"lZAC":[function(require,module,exports) {
 module.exports="electron.44f6d40a.svg";
-},{}],"c0cJ":[function(require,module,exports) {
-module.exports="express.a9c830e0.svg";
 },{}],"IBEi":[function(require,module,exports) {
 module.exports="flutter.870f22e7.svg";
+},{}],"c0cJ":[function(require,module,exports) {
+module.exports="express.a9c830e0.svg";
 },{}],"H/Cv":[function(require,module,exports) {
 module.exports="github.c966d396.svg";
+},{}],"HCzK":[function(require,module,exports) {
+module.exports="inha.32acc4ff.svg";
 },{}],"M1Ix":[function(require,module,exports) {
 module.exports="html.d2709353.svg";
 },{}],"qLbh":[function(require,module,exports) {
@@ -54,10 +58,10 @@ module.exports="php.9c2b4a38.svg";
 module.exports="postcss.4b5afd73.svg";
 },{}],"3NsP":[function(require,module,exports) {
 module.exports="pug.de35cc58.svg";
-},{}],"DatQ":[function(require,module,exports) {
-module.exports="python.72d48b2f.svg";
 },{}],"d6kC":[function(require,module,exports) {
 module.exports="rust.90b2be88.svg";
+},{}],"DatQ":[function(require,module,exports) {
+module.exports="python.72d48b2f.svg";
 },{}],"Kpyv":[function(require,module,exports) {
 module.exports="sass.f0d43673.svg";
 },{}],"SH2d":[function(require,module,exports) {
@@ -71,8 +75,8 @@ module.exports="vue.676a9390.svg";
 },{}],"MOQT":[function(require,module,exports) {
 module.exports="webassembly.077410a9.svg";
 },{}],"uUbn":[function(require,module,exports) {
-module.exports={android:require("./android.svg"),apache:require("./apache.svg"),c:require("./c.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),dart:require("./dart.svg"),electron:require("./electron.svg"),express:require("./express.svg"),flutter:require("./flutter.svg"),github:require("./github.svg"),html:require("./html.svg"),java:require("./java.svg"),javascript:require("./javascript.svg"),jekyll:require("./jekyll.svg"),jquery:require("./jquery.svg"),kotlin:require("./kotlin.svg"),less:require("./less.svg"),markdown:require("./markdown.svg"),nodejs:require("./nodejs.svg"),photo:require("./photo.svg"),php:require("./php.svg"),postcss:require("./postcss.svg"),pug:require("./pug.svg"),python:require("./python.svg"),rust:require("./rust.svg"),sass:require("./sass.svg"),sqlite:require("./sqlite.svg"),swift:require("./swift.svg"),typescript:require("./typescript.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg")};
-},{"./android.svg":"aqXD","./apache.svg":"D6LR","./c.svg":"eLHV","./cpp.svg":"ICUN","./css.svg":"Ly5E","./dart.svg":"+ocN","./electron.svg":"lZAC","./express.svg":"c0cJ","./flutter.svg":"IBEi","./github.svg":"H/Cv","./html.svg":"M1Ix","./java.svg":"qLbh","./javascript.svg":"mgm0","./jekyll.svg":"DLxm","./jquery.svg":"1kvV","./kotlin.svg":"uxS/","./less.svg":"J7ZU","./markdown.svg":"zvs3","./nodejs.svg":"dYE+","./photo.svg":"iX6h","./php.svg":"M6gP","./postcss.svg":"IznM","./pug.svg":"3NsP","./python.svg":"DatQ","./rust.svg":"d6kC","./sass.svg":"Kpyv","./sqlite.svg":"SH2d","./swift.svg":"14vO","./typescript.svg":"Pv0J","./vue.svg":"nbKG","./webassembly.svg":"MOQT"}],"NhNV":[function(require,module,exports) {
+module.exports={android:require("./android.svg"),apache:require("./apache.svg"),baekseok:require("./baekseok.svg"),c:require("./c.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),dart:require("./dart.svg"),electron:require("./electron.svg"),flutter:require("./flutter.svg"),express:require("./express.svg"),github:require("./github.svg"),inha:require("./inha.svg"),html:require("./html.svg"),java:require("./java.svg"),javascript:require("./javascript.svg"),jekyll:require("./jekyll.svg"),jquery:require("./jquery.svg"),kotlin:require("./kotlin.svg"),less:require("./less.svg"),markdown:require("./markdown.svg"),nodejs:require("./nodejs.svg"),photo:require("./photo.svg"),php:require("./php.svg"),postcss:require("./postcss.svg"),pug:require("./pug.svg"),rust:require("./rust.svg"),python:require("./python.svg"),sass:require("./sass.svg"),sqlite:require("./sqlite.svg"),swift:require("./swift.svg"),typescript:require("./typescript.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg")};
+},{"./android.svg":"aqXD","./apache.svg":"D6LR","./baekseok.svg":"f1Hj","./c.svg":"eLHV","./cpp.svg":"ICUN","./css.svg":"Ly5E","./dart.svg":"+ocN","./electron.svg":"lZAC","./flutter.svg":"IBEi","./express.svg":"c0cJ","./github.svg":"H/Cv","./inha.svg":"HCzK","./html.svg":"M1Ix","./java.svg":"qLbh","./javascript.svg":"mgm0","./jekyll.svg":"DLxm","./jquery.svg":"1kvV","./kotlin.svg":"uxS/","./less.svg":"J7ZU","./markdown.svg":"zvs3","./nodejs.svg":"dYE+","./photo.svg":"iX6h","./php.svg":"M6gP","./postcss.svg":"IznM","./pug.svg":"3NsP","./rust.svg":"d6kC","./python.svg":"DatQ","./sass.svg":"Kpyv","./sqlite.svg":"SH2d","./swift.svg":"14vO","./typescript.svg":"Pv0J","./vue.svg":"nbKG","./webassembly.svg":"MOQT"}],"NhNV":[function(require,module,exports) {
 "use strict";var n=a(require("../data/projects.json")),e=a(require("../data/skills.json")),t=a(require("../images/*.svg"));function a(n){return n&&n.__esModule?n:{default:n}}var c=function(n){return'<span class="badge">'.concat(n,"</span>")},o=function(n){if(n){var e=n;return n.length<=4&&(e+=" License"),'<span class="license-badge">'.concat(e,"</span>")}return""},r=function(n){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"24px",a=n.toLowerCase();return a in t.default?'<img class="logo lazy" data-src="'.concat(t.default[a],'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>'):'<img class="logo lazy" data-src="'.concat(t.default.photo,'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>')},i=function(n){var e=n.name,t=n.description,a=n.tech,c=n.license,i=n.url,s='<div class="card elevation invisible">';return s+="<h2>".concat(e," ").concat(o(c),"</h2>"),s+="<p>".concat(t,"</p>"),a&&Array.isArray(a)&&(s+=a.map(function(n){return r(n)}).join("")),i&&(s+='<div class="actions"><a class="material-icons" href="'.concat(i,'">call_made</a></div>')),s+="</div>"},s=function(n){var e=n.name,t=n.description,a=n.tech,i=n.license,s=n.url,l="";return l+="<li>",l+="<h3>",l+=s?'<a href="'.concat(s,'">').concat(e,"</a> ").concat(o(i)," ").concat(a.map(function(n){return r(n,"16px")}).join("")):"".concat(e," ").concat(o(i)," ").concat(c("Private")," ").concat(a.map(function(n){return r(n,"16px")}).join("")),l+="</h3>",l+="<span>".concat(t,"</span>"),l+="</li>"},l=function(n,e){return n.name.localeCompare(e.name)};window.addEventListener("DOMContentLoaded",function(){document.querySelector("#strong-skills").insertAdjacentHTML("beforeend",e.default.strong.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#knowledgeable-skills").insertAdjacentHTML("beforeend",e.default.knowledgeable.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#pinned-projects").innerHTML=n.default.pinned.sort(l).map(i).join(""),document.querySelector("#other-projects").innerHTML=n.default.others.sort(l).map(s).join("")});
 },{"../data/projects.json":"cvHM","../data/skills.json":"x55J","../images/*.svg":"uUbn"}],"Va+o":[function(require,module,exports) {
 module.exports={particles:{number:{value:60,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"}},opacity:{value:.5,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{repulse:{distance:200,duration:.4},push:{particles_nb:4}}},retina_detect:!0};
