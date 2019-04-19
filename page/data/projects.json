@@ -155,7 +155,7 @@
         },
         {
             "name": "inha-timetable-generator",
-            "description": "Inha Univ. Time Table Generatord Animated SVG Logos",
+            "description": "Inha Univ. Time Table Generator",
             "tech": [
                 "nodejs",
                 "html",
