@@ -134,6 +134,39 @@
             "url": "https://github.com/Astro36/hanguler"
         },
         {
+            "name": "inha-info",
+            "description": "Fetch Inha Univ. Information from Official Website",
+            "tech": [
+                "nodejs",
+                "javascript"
+            ],
+            "license": "MIT",
+            "url": "https://github.com/Astro36/inha-info"
+        },
+        {
+            "name": "inha-logo",
+            "description": "Inha Univ.’s Static and Animated SVG Logos",
+            "tech": [
+                "css",
+                "svg"
+            ],
+            "license": "MIT",
+            "url": "https://github.com/Astro36/inha-logo"
+        },
+        {
+            "name": "inha-timetable-generator",
+            "description": "Inha Univ. Time Table Generatord Animated SVG Logos",
+            "tech": [
+                "nodejs",
+                "html",
+                "css",
+                "javascript",
+                "vue"
+            ],
+            "license": "MIT",
+            "url": "https://github.com/Astro36/inha-timetable-generator"
+        },
+        {
             "name": "kodict",
             "description": "Provides Korean Dictionary Implements and Crawler",
             "tech": [
