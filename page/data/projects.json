@@ -82,7 +82,7 @@
                 "jquery"
             ],
             "license": "GPL-3.0",
-            "url": "https://github.com/CosmosA/Altair"
+            "url": "https://github.com/cosmos-a/altair"
         },
         {
             "name": "d01t-blog-theme",
@@ -109,7 +109,7 @@
                 "jquery"
             ],
             "license": "GPL-3.0",
-            "url": "https://github.com/CosmosA/Deneb"
+            "url": "https://github.com/cosmos-a/deneb"
         },
         {
             "name": "flutter-music-plugin",
@@ -168,7 +168,7 @@
         },
         {
             "name": "kodict",
-            "description": "Provides Korean Dictionary Implements and Crawler",
+            "description": "Korean Dictionary Manager for Rust",
             "tech": [
                 "rust"
             ],
@@ -241,7 +241,7 @@
                 "java"
             ],
             "license": "GPL-3.0",
-            "url": "https://github.com/CosmosA/Metis"
+            "url": "https://github.com/cosmos-a/metis"
         },
         {
             "name": "particle-manager",
