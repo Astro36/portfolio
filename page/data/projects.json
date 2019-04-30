@@ -13,7 +13,7 @@
         },
         {
             "name": "korean-dictionary",
-            "description": "Provides Korean Dictionary Implements and Crawler for Node.js with Rust FFI",
+            "description": "Korean Dictionary Manager for Node.js with Rust FFI",
             "tech": [
                 "nodejs",
                 "javascript",
