@@ -22,42 +22,44 @@ module.exports="cpp.edb5ac21.svg";
 module.exports="css.f00dfc45.svg";
 },{}],"+ocN":[function(require,module,exports) {
 module.exports="dart.934f9343.svg";
-},{}],"c0cJ":[function(require,module,exports) {
-module.exports="express.2e8eb780.svg";
 },{}],"lZAC":[function(require,module,exports) {
 module.exports="electron.4f394c71.svg";
+},{}],"c0cJ":[function(require,module,exports) {
+module.exports="express.2e8eb780.svg";
 },{}],"IBEi":[function(require,module,exports) {
 module.exports="flutter.870f22e7.svg";
 },{}],"H/Cv":[function(require,module,exports) {
 module.exports="github.9c1b5b47.svg";
-},{}],"HCzK":[function(require,module,exports) {
-module.exports="inha.32acc4ff.svg";
 },{}],"M1Ix":[function(require,module,exports) {
 module.exports="html.e6d6f488.svg";
+},{}],"qLbh":[function(require,module,exports) {
+module.exports="java.c8ccbad8.svg";
 },{}],"mgm0":[function(require,module,exports) {
 module.exports="javascript.3fa22fee.svg";
+},{}],"HCzK":[function(require,module,exports) {
+module.exports="inha.32acc4ff.svg";
 },{}],"DLxm":[function(require,module,exports) {
 module.exports="jekyll.80f10000.svg";
-},{}],"1kvV":[function(require,module,exports) {
-module.exports="jquery.80a1a778.svg";
 },{}],"uxS/":[function(require,module,exports) {
 module.exports="kotlin.9d381692.svg";
-},{}],"J7ZU":[function(require,module,exports) {
-module.exports="less.be7debf6.svg";
 },{}],"zvs3":[function(require,module,exports) {
 module.exports="markdown.ef39de34.svg";
+},{}],"1kvV":[function(require,module,exports) {
+module.exports="jquery.80a1a778.svg";
+},{}],"J7ZU":[function(require,module,exports) {
+module.exports="less.be7debf6.svg";
+},{}],"iX6h":[function(require,module,exports) {
+module.exports="photo.240255d9.svg";
 },{}],"dYE+":[function(require,module,exports) {
 module.exports="nodejs.e53105b8.svg";
 },{}],"M6gP":[function(require,module,exports) {
 module.exports="php.1ac0d5e9.svg";
-},{}],"iX6h":[function(require,module,exports) {
-module.exports="photo.240255d9.svg";
 },{}],"IznM":[function(require,module,exports) {
 module.exports="postcss.0930fd62.svg";
-},{}],"3NsP":[function(require,module,exports) {
-module.exports="pug.04b9ec41.svg";
 },{}],"DatQ":[function(require,module,exports) {
 module.exports="python.9f99d11e.svg";
+},{}],"3NsP":[function(require,module,exports) {
+module.exports="pug.04b9ec41.svg";
 },{}],"d6kC":[function(require,module,exports) {
 module.exports="rust.358ac37a.svg";
 },{}],"Kpyv":[function(require,module,exports) {
@@ -74,11 +76,9 @@ module.exports="typescript.af186f97.svg";
 module.exports="vue.e4e5c477.svg";
 },{}],"MOQT":[function(require,module,exports) {
 module.exports="webassembly.febdef53.svg";
-},{}],"qLbh":[function(require,module,exports) {
-module.exports="java.c8ccbad8.svg";
 },{}],"uUbn":[function(require,module,exports) {
-module.exports={android:require("./android.svg"),apache:require("./apache.svg"),baekseok:require("./baekseok.svg"),c:require("./c.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),dart:require("./dart.svg"),express:require("./express.svg"),electron:require("./electron.svg"),flutter:require("./flutter.svg"),github:require("./github.svg"),inha:require("./inha.svg"),html:require("./html.svg"),javascript:require("./javascript.svg"),jekyll:require("./jekyll.svg"),jquery:require("./jquery.svg"),kotlin:require("./kotlin.svg"),less:require("./less.svg"),markdown:require("./markdown.svg"),nodejs:require("./nodejs.svg"),php:require("./php.svg"),photo:require("./photo.svg"),postcss:require("./postcss.svg"),pug:require("./pug.svg"),python:require("./python.svg"),rust:require("./rust.svg"),sass:require("./sass.svg"),sqlite:require("./sqlite.svg"),svg:require("./svg.svg"),swift:require("./swift.svg"),typescript:require("./typescript.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg"),java:require("./java.svg")};
-},{"./android.svg":"aqXD","./apache.svg":"D6LR","./baekseok.svg":"f1Hj","./c.svg":"eLHV","./cpp.svg":"ICUN","./css.svg":"Ly5E","./dart.svg":"+ocN","./express.svg":"c0cJ","./electron.svg":"lZAC","./flutter.svg":"IBEi","./github.svg":"H/Cv","./inha.svg":"HCzK","./html.svg":"M1Ix","./javascript.svg":"mgm0","./jekyll.svg":"DLxm","./jquery.svg":"1kvV","./kotlin.svg":"uxS/","./less.svg":"J7ZU","./markdown.svg":"zvs3","./nodejs.svg":"dYE+","./php.svg":"M6gP","./photo.svg":"iX6h","./postcss.svg":"IznM","./pug.svg":"3NsP","./python.svg":"DatQ","./rust.svg":"d6kC","./sass.svg":"Kpyv","./sqlite.svg":"SH2d","./svg.svg":"KF7V","./swift.svg":"14vO","./typescript.svg":"Pv0J","./vue.svg":"nbKG","./webassembly.svg":"MOQT","./java.svg":"qLbh"}],"NhNV":[function(require,module,exports) {
+module.exports={android:require("./android.svg"),apache:require("./apache.svg"),baekseok:require("./baekseok.svg"),c:require("./c.svg"),cpp:require("./cpp.svg"),css:require("./css.svg"),dart:require("./dart.svg"),electron:require("./electron.svg"),express:require("./express.svg"),flutter:require("./flutter.svg"),github:require("./github.svg"),html:require("./html.svg"),java:require("./java.svg"),javascript:require("./javascript.svg"),inha:require("./inha.svg"),jekyll:require("./jekyll.svg"),kotlin:require("./kotlin.svg"),markdown:require("./markdown.svg"),jquery:require("./jquery.svg"),less:require("./less.svg"),photo:require("./photo.svg"),nodejs:require("./nodejs.svg"),php:require("./php.svg"),postcss:require("./postcss.svg"),python:require("./python.svg"),pug:require("./pug.svg"),rust:require("./rust.svg"),sass:require("./sass.svg"),sqlite:require("./sqlite.svg"),svg:require("./svg.svg"),swift:require("./swift.svg"),typescript:require("./typescript.svg"),vue:require("./vue.svg"),webassembly:require("./webassembly.svg")};
+},{"./android.svg":"aqXD","./apache.svg":"D6LR","./baekseok.svg":"f1Hj","./c.svg":"eLHV","./cpp.svg":"ICUN","./css.svg":"Ly5E","./dart.svg":"+ocN","./electron.svg":"lZAC","./express.svg":"c0cJ","./flutter.svg":"IBEi","./github.svg":"H/Cv","./html.svg":"M1Ix","./java.svg":"qLbh","./javascript.svg":"mgm0","./inha.svg":"HCzK","./jekyll.svg":"DLxm","./kotlin.svg":"uxS/","./markdown.svg":"zvs3","./jquery.svg":"1kvV","./less.svg":"J7ZU","./photo.svg":"iX6h","./nodejs.svg":"dYE+","./php.svg":"M6gP","./postcss.svg":"IznM","./python.svg":"DatQ","./pug.svg":"3NsP","./rust.svg":"d6kC","./sass.svg":"Kpyv","./sqlite.svg":"SH2d","./svg.svg":"KF7V","./swift.svg":"14vO","./typescript.svg":"Pv0J","./vue.svg":"nbKG","./webassembly.svg":"MOQT"}],"NhNV":[function(require,module,exports) {
 "use strict";var n=a(require("../data/projects.json")),e=a(require("../data/skills.json")),t=a(require("../images/*.svg"));function a(n){return n&&n.__esModule?n:{default:n}}var c=function(n){return'<span class="badge">'.concat(n,"</span>")},o=function(n){if(n){var e=n;return n.length<=4&&(e+=" License"),'<span class="license-badge">'.concat(e,"</span>")}return""},r=function(n){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"24px",a=n.toLowerCase();return a in t.default?'<img class="logo lazy" data-src="'.concat(t.default[a],'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>'):'<img class="logo lazy" data-src="'.concat(t.default.photo,'" title="').concat(n,'" alt="').concat(n,'" width="').concat(e,'" height="').concat(e,'"/>')},i=function(n){var e=n.name,t=n.description,a=n.tech,c=n.license,i=n.url,s='<div class="card elevation invisible">';return s+="<h2>".concat(e," ").concat(o(c),"</h2>"),s+="<p>".concat(t,"</p>"),a&&Array.isArray(a)&&(s+=a.map(function(n){return r(n)}).join("")),i&&(s+='<div class="actions"><a class="material-icons" href="'.concat(i,'">call_made</a></div>')),s+="</div>"},s=function(n){var e=n.name,t=n.description,a=n.tech,i=n.license,s=n.url,l="";return l+="<li>",l+="<h3>",l+=s?'<a href="'.concat(s,'">').concat(e,"</a> ").concat(o(i)," ").concat(a.map(function(n){return r(n,"16px")}).join("")):"".concat(e," ").concat(o(i)," ").concat(c("Private")," ").concat(a.map(function(n){return r(n,"16px")}).join("")),l+="</h3>",l+="<span>".concat(t,"</span>"),l+="</li>"},l=function(n,e){return n.name.localeCompare(e.name)};window.addEventListener("DOMContentLoaded",function(){document.querySelector("#strong-skills").insertAdjacentHTML("beforeend",e.default.strong.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#knowledgeable-skills").insertAdjacentHTML("beforeend",e.default.knowledgeable.map(function(n){return r(n,"32px")}).join("")),document.querySelector("#pinned-projects").innerHTML=n.default.pinned.sort(l).map(i).join(""),document.querySelector("#other-projects").innerHTML=n.default.others.sort(l).map(s).join("")});
 },{"../data/projects.json":"cvHM","../data/skills.json":"x55J","../images/*.svg":"uUbn"}],"Va+o":[function(require,module,exports) {
 module.exports={particles:{number:{value:60,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"}},opacity:{value:.5,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{repulse:{distance:200,duration:.4},push:{particles_nb:4}}},retina_detect:!0};
