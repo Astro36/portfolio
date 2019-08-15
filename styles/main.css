@@ -1,0 +1,271 @@
+.logo {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 5;
+  width: 3rem;
+  height: 3rem;
+}
+
+.page-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.page-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+}
+
+.page {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100vh;
+}
+
+.wallpaper__background {
+  background: linear-gradient(0deg, #e58c8f 14%, #b45a95 22%, #773579 29%, #5c2967 38%, #4d225d 45%, #311444 58%, #1a0b29 81%);
+}
+
+.wallpaper__animation {
+  position: absolute;
+  z-index: 1;
+}
+
+.wallpaper__foreground {
+  position: absolute;
+  z-index: 2;
+  overflow-y: auto;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+.hero {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0.5rem;
+  font-size: 4rem;
+  font-weight: normal;
+  color: white;
+}
+
+.hero__title--highlight {
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  color: #4d225d;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+.hero__subtitle {
+  margin: 0.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+  opacity: 0.8;
+}
+
+.hero__content {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white;
+  opacity: 0.9;
+}
+
+.hero__action {
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+  padding: 1rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
+  animation: bounce ease-in-out 1s infinite alternate;
+}
+
+.hero__action:hover {
+  animation: none;
+}
+
+.headline {
+  margin: 1rem 0;
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 6rem 4rem 2rem;
+}
+
+.grid--double-stage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 0 2rem;
+}
+
+.grid--triple-stage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 0 2rem;
+}
+
+.no-grid {
+  grid-column: 1 / 4;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+.subtitle {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #424242;
+}
+
+.list {
+  padding: 0;
+  margin: 0 1rem;
+  list-style-type: none;
+}
+
+.list-item {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #424242;
+}
+
+.list-item__title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #424242;
+}
+
+.list-item__title-label {
+  margin: 1rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #424242;
+}
+
+.list-item__content {
+  margin: 0.5rem 0;
+  overflow-y: hidden;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #616161;
+}
+
+.list-item__image {
+  float: left;
+  width: 4rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+}
+
+.list-item__image--small {
+  width: 2rem;
+}
+
+.card {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+}
+
+.card__outline {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #b45a95;
+}
+
+.card__title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #424242;
+}
+
+.card__content {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #616161;
+}
+
+.hashtags {
+  padding: 0;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.hashtag {
+  display: inline;
+  font-weight: normal;
+  color: #9e9e9e;
+}
+
+.hashtag::before {
+  content: '#';
+}
+
+.link {
+  color: #773579;
+  text-decoration: none;
+}
+
+.more-info {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #424242;
+  text-align: right;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(-40%, -50%);
+  }
+}

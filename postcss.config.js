@@ -1,6 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const postcssPresetEnv = require('postcss-preset-env');
+/* eslint import/no-extraneous-dependencies: off */
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  plugins: [postcssPresetEnv({ stage: 0 })],
+  plugins: [
+    autoprefixer,
+  ],
 };

@@ -1,15 +1,26 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "My Portfolio",
   "main": "index.js",
-  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "parcel-bundler": "^1.12.3",
+    "push-dir": "^0.4.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^18.3.0"
+  },
   "scripts": {
-    "build": "parcel build page/index.html -d docs --public-url ./ --no-source-maps",
+    "build": "parcel build index.html --public-url ./ --no-source-maps",
     "clean": "rm -rf docs",
-    "dev": "parcel page/index.html -d dev",
-    "lint": "eslint . --ignore-path .gitignore --ignore-pattern docs/ & stylelint page/styles/*.css",
-    "lint:fix": "eslint . --ignore-path .gitignore --ignore-pattern docs/ --fix & stylelint page/styles/*.css --fix"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "dev": "parcel watch index.html",
+    "lint": "eslint --ignore-path .gitignore . & stylelint styles/*.css",
+    "lint:fix": "eslint --fix --ignore-path .gitignore . & stylelint --fix styles/*.css"
   },
   "repository": {
     "type": "git",
@@ -21,16 +32,5 @@
     "url": "https://github.com/Astro36/portfolio/issues"
   },
   "homepage": "https://github.com/Astro36/portfolio#readme",
-  "devDependencies": {
-    "@babel/preset-env": "^7.4.4",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-compat": "^3.1.1",
-    "eslint-plugin-import": "^2.17.2",
-    "parcel-bundler": "^1.12.3",
-    "postcss-preset-env": "^6.6.0",
-    "stylelint": "^10.0.1",
-    "stylelint-config-recess-order": "^2.0.2",
-    "stylelint-config-standard": "^18.3.0"
-  }
+  "private": true
 }

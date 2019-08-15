@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/font.css">
+</head>
+
+<body>
+    <nav class="page-nav">
+        <img id="previous" src="./images/ic_arrow_back.svg" alt="Previous">
+        <img id="next" src="./images/ic_arrow_forward.svg" alt="Next">
+    </nav>
+    <main class="page-wrapper" role="main">
+        <!-- Main -->
+        <section class="page wallpaper wallpaper__background">
+            <img class="logo" src="./images/logo.svg" alt="Astro36">
+            <canvas id="particles" class="wallpaper wallpaper__animation"></canvas>
+            <img class="wallpaper wallpaper__foreground" src="./images/wallpaper-foreground.svg" alt="Wallpaper Foreground">
+            <article class="wallpaper hero">
+                <h1 class="hero__title">I’m a <span class="hero__title--highlight">hybrid</span> developer</h1>
+                <h2 class="hero__subtitle">Seungjae Park</h2>
+                <p class="hero__content">Software Developer at Inha Univ.</p>
+                <img id="next" class="hero__action" src="./images/ic_play_arrow.svg" alt="Next">
+            </article>
+        </section>
+
+        <!-- Profile -->
+        <section class="page container grid grid--double-stage">
+            <h1 class="headline no-grid">Hello!</h1>
+            <article>
+                <ul class="list">
+                    <li class="list-item">
+                        <p class="list-item__title">Email</p>
+                        <p class="list-item__content">
+                            <a class="link" href="mailto:astro.psj@gmail.com">astro.psj@gmail.com</a>
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <p class="list-item__title">GitHub</p>
+                        <p class="list-item__content">
+                            <a class="link" href="https://github.com/Astro36">@Astro36</a>
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <p class="list-item__title">Telegram</p>
+                        <p class="list-item__content">
+                            <a class="link" href="https://t.me/psj1026">@psj1026</a>
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <p class="list-item__title">Location</p>
+                        <p class="list-item__content">Republic of Korea 🇰🇷</p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <header class="title">Education</header>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            <a class="link" href="http://www.inha.ac.kr/">Inha Univ.</a>
+                            <a class="list-item__title-label link" href="http://ice.inha.ac.kr/">Dept. of Information and Communication Eng.</a>
+                        </div>
+                        <div class="list-item__content">
+                            <img class="list-item__image list-item__image--small" src="./images/inha.svg" alt="Inha Univ.">
+                            <time datetime="2019-03">2019.03</time> ~ Now
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            <a class="link" href="http://www.baekseok.hs.kr/">Baekseok High.</a>
+                        </div>
+                        <div class="list-item__content">
+                            <img class="list-item__image list-item__image--small" src="./images/baekseok.svg" alt="Baekseok High.">
+                            <time datetime="2016-03">2016.03</time> ~ <time datetime="2019-02">2019.02</time>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Study & Club -->
+        <section class="page container grid grid--double-stage">
+            <article>
+                <header class="title">Study</header>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            2019 Google Machine Learning Study Jams
+                            <span class="list-item__title-label">
+                                <time datetime="2019-02">2019.02</time> ~ <time datetime="2019-07">2019.07</time>
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            Completed <a class="link" href="https://sites.google.com/view/studyjamkr/ml_introductory">Introductory</a>, <a class="link" href="https://sites.google.com/view/studyjamkr/ml_experienced">Experienced</a> and <a class="link" href="https://sites.google.com/view/studyjamkr/ml_advanced">Advanced</a> Classes
+                            <ul class="hashtags">
+                                <li class="hashtag">google_study_jam</li>
+                                <li class="hashtag">machine_learning</li>
+                                <li class="hashtag">coursera</li>
+                                <li class="hashtag">qwiklabs</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            4th National Supercomputing Camp
+                            <span class="list-item__title-label">
+                                <time datetime="2018-07">2018.07</time>
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            Education and Practice for Supercomputer, Parallel Computing, Artificial Intelligence, Drone, etc.
+                            <ul class="hashtags">
+                                <li class="hashtag">youth_camp</li>
+                                <li class="hashtag">supercomputer</li>
+                                <li class="hashtag">parallel_computing</li>
+                                <li class="hashtag">message_passing_interface</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <header class="title">Club</header>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            <a class="link" href="http://prography.org/">Prography</a>
+                            <span class="list-item__title-label">
+                                <time datetime="2019-03">2019.03</time> ~ Now
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            <img class="list-item__image" src="./images/prography.png" alt="Prography">
+                            A Collaborative IT Project Club
+                            <ul class="hashtags">
+                                <li class="hashtag">programming</li>
+                                <li class="hashtag">united_club</li>
+                                <li class="hashtag">it_startup</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            <a class="link" href="https://d01t.github.io/">Do IT</a>
+                            <span class="list-item__title-label">
+                                <time datetime="2017-06">2017.06</time> ~ Now
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            <img class="list-item__image" src="./images/doit.png" alt="Do IT">
+                            The Youth Programming Study Group
+                            <ul class="hashtags">
+                                <li class="hashtag">programming</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            Beakseok Jarvis
+                            <span class="list-item__title-label">
+                                <time datetime="2016-04">2016.04</time> ~ <time datetime="2017-11">2017.11</time>
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            <img class="list-item__image" src="./images/baekseok_jarvis.png" alt="Beakseok Jarvis" style="background-color: teal;">
+                            Baekseok Highschool Official Computer Mechanical Engineering Club
+                            <ul class="hashtags">
+                                <li class="hashtag">baekseok_highschool</li>
+                                <li class="hashtag">computer</li>
+                                <li class="hashtag">arduino</li>
+                                <li class="hashtag">odroid</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Award & Honor -->
+        <section class="page container">
+            <article>
+                <header class="title">Award & Honor</header>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            KAIST Creative Team Coding Challenge
+                            <span class="list-item__title-label">
+                                <time datetime="2018-03">2018.03</time>
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            Excellence Award - Super Easy Music Finder based on Word2Vec
+                            <ul class="hashtags">
+                                <li class="hashtag">natural_language_processing</li>
+                                <li class="hashtag">big_data</li>
+                                <li class="hashtag">crawler</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__title">
+                            2018 Global Design Thinking Hackathon
+                            <span class="list-item__title-label">
+                                <time datetime="2018-07">2018.07</time>
+                            </span>
+                        </div>
+                        <div class="list-item__content">
+                            Excellent Cooperation Award(=Participation Award) - Autonomous Driving Automobile Intelligence Dataset Contributing Community
+                            <ul class="hashtags">
+                                <li class="hashtag">self_driving_car</li>
+                                <li class="hashtag">big_data</li>
+                                <li class="hashtag">community_server</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Project -->
+        <section class="page container">
+            <header class="title no-grid">Project</header>
+            <article class="grid grid--triple-stage">
+                <header class="subtitle no-grid">Toy</header>
+                <section class="card">
+                    <div class="card__outline">
+                        Node.js
+                    </div>
+                    <div class="card__title">
+                        Kokoa
+                    </div>
+                    <div class="card__content">
+                        Unsupervised Learning Korean Kernel Object Analyzer
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                            <li class="hashtag">python</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Node.js
+                    </div>
+                    <div class="card__title">
+                        Korean School
+                    </div>
+                    <div class="card__content">
+                        Fetch Korean Schools Data from Online
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Node.js
+                    </div>
+                    <div class="card__title">
+                        Hanguler
+                    </div>
+                    <div class="card__content">
+                        Simple Hangul Manipulating Library
+                        <ul class="hashtags">
+                            <li class="hashtag">typescript</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        PWA
+                    </div>
+                    <div class="card__title">
+                        TitaGen
+                    </div>
+                    <div class="card__content">
+                        Inha Univ. Timetable Generator
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Web Component
+                    </div>
+                    <div class="card__title">
+                        Particle Manager
+                    </div>
+                    <div class="card__content">
+                        Particle Library for Browser with WebAssembly
+                        <ul class="hashtags">
+                            <li class="hashtag">rust</li>
+                            <li class="hashtag">wasm</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Native
+                    </div>
+                    <div class="card__title">
+                        Kodict
+                    </div>
+                    <div class="card__content">
+                        Korean Dictionary Manager for Rust
+                        <ul class="hashtags">
+                            <li class="hashtag">rust</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+            <br>
+            <article class="grid grid--triple-stage">
+                <header class="subtitle no-grid">for Hackathon & Competition</header>
+                <section class="card">
+                    <div class="card__outline">
+                        Electron > Back-end
+                    </div>
+                    <div class="card__title">
+                        Touch Music
+                    </div>
+                    <div class="card__content">
+                        Super Easy Music Finder based on Word2Vec<br>
+                        @KAIST Creative Team Coding Challenge
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                            <li class="hashtag">python</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Web Component
+                    </div>
+                    <div class="card__title">
+                        Kecap
+                    </div>
+                    <div class="card__content">
+                        Keyboard-driven Carousel Component Provider <br>
+                        @7th D2 CAMPUS FEST mini
+                        <ul class="hashtags">
+                            <li class="hashtag">typescript</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Web > Front-end
+                    </div>
+                    <div class="card__title">
+                        WATCH_DOCS
+                    </div>
+                    <div class="card__content">
+                        Document Management Service for Business<br>
+                        @Huobi Korea × WaykiChain Hackathon
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Web > Front-end
+                    </div>
+                    <div class="card__title">
+                        Eventually
+                    </div>
+                    <div class="card__content">
+                        Simple and Low Cost Event Operation Helper<br>
+                        @Junction X Seoul 2019, API Hack Track
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                            <li class="hashtag">python</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__outline">
+                        Web > Full-stack
+                    </div>
+                    <div class="card__title">
+                        Big Drive
+                    </div>
+                    <div class="card__content">
+                        Autonomous Driving Automobile Intelligence Dataset Contributing Community<br>
+                        @2018 Global Design Thinking Hackathon
+                        <ul class="hashtags">
+                            <li class="hashtag">javascript</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+            <p class="more-info">
+                If you see more information, <a class="link" href="https://github.com/Astro36">visit my GitHub</a>
+            </p>
+        </section>
+        <!-- <section class="page">
+            <article class="">
+                3
+            </article>
+        </section> -->
+    </main>
+    <!-- <div class="page-control">
+        <button id="previous" class="page-control__button page-control__button--previous">&lt;</button>
+        <button id="next" class="page-control__button page-control__button--next">&gt;</button>
+    </div> -->
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/wallpaper.js"></script>
+</body>
+
+</html>
