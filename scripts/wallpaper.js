@@ -76,6 +76,7 @@ const initObjects = () => {
       ctx.fillStyle = star.color;
       ctx.arc(star.x, star.y, star.size, 0, CIRCLE);
       ctx.fill();
+      star.x += 0.01;
     }
 
     // Draw the meteor

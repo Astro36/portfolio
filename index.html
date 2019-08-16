@@ -3,10 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="My Portfolio">
+    <meta name="author" content="Seungjae Park">
+    <meta name="description" content="Seungjae Park’s Portfolio">
+    <meta name="keywords" content="portfolio,developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/reset.css">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#773579">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="#773579">
+
+    <!-- Fullscreen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Icon -->
+    <link rel="icon" sizes="any" href="./images/logo.svg" type="image/svg+xml">
+    <link rel="icon" sizes="192x192" href="./images/icon192.png" type="image/png">
+    <link rel="apple-touch-icon" href="./images/icon180.png">
+    <meta name="msapplication-square310x310logo" content="./images/icon310.png">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astro36.github.io/portfolio/">
+    <meta property="og:title" content="My Portfolio">
+    <meta property="og:description" content="Seungjae Park’s Portfolio">
+    <meta property="og:image" content="./images/icon512.png">
+
+    <!-- Twitter Summary Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="My Portfolio">
+    <meta name="twitter:description" content="Seungjae Park’s Portfolio">
+    <meta name="twitter:image" content="./images/icon512.png">
+
+    <title>My Portfolio</title>
+    <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/font.css">
 </head>
@@ -21,12 +54,12 @@
         <section class="page wallpaper wallpaper__background">
             <img class="logo" src="./images/logo.svg" alt="Astro36">
             <canvas id="particles" class="wallpaper wallpaper__animation"></canvas>
-            <img class="wallpaper wallpaper__foreground" src="./images/wallpaper-foreground.svg" alt="Wallpaper Foreground">
+            <img class="wallpaper wallpaper__foreground" src="./images/wallpaper_foreground.svg" alt="Wallpaper Foreground">
             <article class="wallpaper hero">
-                <h1 class="hero__title">I’m a <span class="hero__title--highlight">hybrid</span> developer</h1>
+                <h1 class="hero__title">I’m a <span id="highlight" class="hero__title--highlight">hybrid</span> developer</h1>
                 <h2 class="hero__subtitle">Seungjae Park</h2>
                 <p class="hero__content">Software Developer at Inha Univ.</p>
-                <img id="next" class="hero__action" src="./images/ic_play_arrow.svg" alt="Next">
+                <img id="start" class="hero__action" src="./images/ic_play_arrow.svg" alt="Next">
             </article>
         </section>
 
@@ -68,7 +101,7 @@
                             <a class="list-item__title-label link" href="http://ice.inha.ac.kr/">Dept. of Information and Communication Eng.</a>
                         </div>
                         <div class="list-item__content">
-                            <img class="list-item__image list-item__image--small" src="./images/inha.svg" alt="Inha Univ.">
+                            <img class="list-item__image list-item__image--small lazy" src="./images/symbol_inha.svg" alt="Inha Univ.">
                             <time datetime="2019-03">2019.03</time> ~ Now
                         </div>
                     </li>
@@ -77,7 +110,7 @@
                             <a class="link" href="http://www.baekseok.hs.kr/">Baekseok High.</a>
                         </div>
                         <div class="list-item__content">
-                            <img class="list-item__image list-item__image--small" src="./images/baekseok.svg" alt="Baekseok High.">
+                            <img class="list-item__image list-item__image--small lazy" src="./images/symbol_baekseok.svg" alt="Baekseok High.">
                             <time datetime="2016-03">2016.03</time> ~ <time datetime="2019-02">2019.02</time>
                         </div>
                     </li>
@@ -98,7 +131,7 @@
                             </span>
                         </div>
                         <div class="list-item__content">
-                            Completed <a class="link" href="https://sites.google.com/view/studyjamkr/ml_introductory">Introductory</a>, <a class="link" href="https://sites.google.com/view/studyjamkr/ml_experienced">Experienced</a> and <a class="link" href="https://sites.google.com/view/studyjamkr/ml_advanced">Advanced</a> Classes
+                            Completed <a class="link" href="https://sites.google.com/view/studyjamkr/ml_introductory">Introductory</a>, <a class="link" href="https://sites.google.com/view/studyjamkr/ml_experienced">Experienced</a>, and <a class="link" href="https://sites.google.com/view/studyjamkr/ml_advanced">Advanced</a> Classes
                             <ul class="hashtags">
                                 <li class="hashtag">google_study_jam</li>
                                 <li class="hashtag">machine_learning</li>
@@ -137,7 +170,7 @@
                             </span>
                         </div>
                         <div class="list-item__content">
-                            <img class="list-item__image" src="./images/prography.png" alt="Prography">
+                            <img class="list-item__image lazy" src="./images/club_prography.png" alt="Prography">
                             A Collaborative IT Project Club
                             <ul class="hashtags">
                                 <li class="hashtag">programming</li>
@@ -154,7 +187,7 @@
                             </span>
                         </div>
                         <div class="list-item__content">
-                            <img class="list-item__image" src="./images/doit.png" alt="Do IT">
+                            <img class="list-item__image lazy" src="./images/club_doit.png" alt="Do IT">
                             The Youth Programming Study Group
                             <ul class="hashtags">
                                 <li class="hashtag">programming</li>
@@ -169,7 +202,7 @@
                             </span>
                         </div>
                         <div class="list-item__content">
-                            <img class="list-item__image" src="./images/baekseok_jarvis.png" alt="Beakseok Jarvis" style="background-color: teal;">
+                            <img class="list-item__image lazy" src="./images/club_jarvis.png" alt="Beakseok Jarvis" style="background-color: teal;">
                             Baekseok Highschool Official Computer Mechanical Engineering Club
                             <ul class="hashtags">
                                 <li class="hashtag">baekseok_highschool</li>
@@ -401,17 +434,8 @@
                 If you see more information, <a class="link" href="https://github.com/Astro36">visit my GitHub</a>
             </p>
         </section>
-        <!-- <section class="page">
-            <article class="">
-                3
-            </article>
-        </section> -->
     </main>
-    <!-- <div class="page-control">
-        <button id="previous" class="page-control__button page-control__button--previous">&lt;</button>
-        <button id="next" class="page-control__button page-control__button--next">&gt;</button>
-    </div> -->
-    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/page.js"></script>
     <script src="./scripts/wallpaper.js"></script>
 </body>
 

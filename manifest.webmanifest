@@ -1,0 +1,23 @@
+{
+    "name": "My Portfolio",
+    "short_name": "Portfolio",
+    "description": "Seungjae Park’s Portfolio",
+    "icons": [
+        {
+            "src": "./images/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/portfolio/?utm_source=homescreen",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#773579",
+    "lang": "en",
+    "scope": "/portfolio/"
+}

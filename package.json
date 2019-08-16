@@ -8,6 +8,7 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "jsdom": "^15.1.1",
     "parcel-bundler": "^1.12.3",
     "push-dir": "^0.4.1",
     "stylelint": "^10.1.0",
@@ -15,10 +16,8 @@
     "stylelint-config-standard": "^18.3.0"
   },
   "scripts": {
-    "build": "parcel build index.html --public-url ./ --no-source-maps",
-    "clean": "rm -rf docs",
+    "build": "node build.js",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "dev": "parcel watch index.html",
     "lint": "eslint --ignore-path .gitignore . & stylelint styles/*.css",
     "lint:fix": "eslint --fix --ignore-path .gitignore . & stylelint --fix styles/*.css"
   },

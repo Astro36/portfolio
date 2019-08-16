@@ -1,3 +1,4 @@
+/* eslint no-param-reassign: off */
 const pageNavigation = document.querySelector('.page-nav');
 const pageWrapper = document.querySelector('.page-wrapper');
 const pages = Array.from(document.querySelectorAll('.page'));
@@ -30,8 +31,10 @@ const goNextPage = () => {
 
 document.querySelector('#previous')
   .addEventListener('click', goPreviousPage);
-Array.from(document.querySelectorAll('#next'))
-  .map((button) => button.addEventListener('click', goNextPage));
+document.querySelector('#next')
+  .addEventListener('click', goNextPage);
+document.querySelector('#start')
+  .addEventListener('click', goNextPage);
 
 window.addEventListener('keydown', (event) => {
   switch (event.key) {
@@ -47,5 +50,11 @@ window.addEventListener('keydown', (event) => {
     default:
   }
 });
+
+Array.from(document.querySelectorAll('img.lazy'))
+  .forEach((image) => {
+    image.src = image.dataset.src;
+    image.classList.remove('lazy');
+  });
 
 onPageUpdated(0);
