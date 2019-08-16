@@ -163,7 +163,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .grid--double-stage {
     grid-template-columns: 1fr;
   }
@@ -173,7 +173,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .grid--triple-stage {
     grid-template-columns: 1fr;
   }
