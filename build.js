@@ -42,14 +42,24 @@ bundler.on('buildStart', async () => {
 bundler.on('buildEnd', async () => {
   const outFile = path.join(__dirname, options.outDir, options.outFile);
   const html = await fsPromises.readFile(outFile);
-  const { window } = new JSDOM(html.toString());
-  const { document } = window;
+  const dom = new JSDOM(html.toString());
+  const { window: { document } } = dom;
+
+  // Lazy Loading
   document.querySelectorAll('img.lazy')
     .forEach((image) => {
       image.dataset.src = image.src;
       image.removeAttribute('src');
     });
-  await fsPromises.writeFile(outFile, document.documentElement.outerHTML);
+
+  // Time
+  const now = new Date().toISOString().slice(0, 10);
+  document.querySelectorAll('time[datetime="now"]')
+    .forEach((time) => {
+      time.setAttribute('datetime', now);
+    });
+
+  await fsPromises.writeFile(outFile, dom.serialize());
 });
 
 bundler.bundle();

@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.99 347.99">
-    <linearGradient id="gradient" x1="25%" y1="6.7%" x2="75%" y2="93.3%">
-        <stop offset="0%" stop-color="#FF4081"/>
-        <stop offset="70%" stop-color="#3F51B5"/>
-    </linearGradient>
-    <mask id="logo">
-        <path fill="white" d="M266.26 309.39l-79.52-210h-29.49l-79.52 210h32.3l61.94-171.56 32.34 89.57h-42.77l-9.64 28h62.61l19.5 53.99h32.25z"/>
-        <circle cx="174" cy="174" r="160" fill="none" stroke="white" stroke-width="28"/>
-    </mask>
-    <circle cx="174" cy="174" r="174" fill="url(#gradient)" mask="url(#logo)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.99 347.99"><linearGradient id="a" x1="25%" x2="75%" y1="6.7%" y2="93.3%"><stop offset="0%" stop-color="#FF4081"/><stop offset="70%" stop-color="#3F51B5"/></linearGradient><mask id="b"><path fill="#fff" d="M266.26 309.39l-79.52-210h-29.49l-79.52 210h32.3l61.94-171.56 32.34 89.57h-42.77l-9.64 28h62.61l19.5 53.99h32.25z"/><circle cx="174" cy="174" r="160" fill="none" stroke="#fff" stroke-width="28"/></mask><circle cx="174" cy="174" r="174" fill="url(#a)" mask="url(#b)"/></svg>

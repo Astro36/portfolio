@@ -1,40 +1,49 @@
 /* eslint no-param-reassign: off */
-const pageNavigation = document.querySelector('.page-nav');
 const pageWrapper = document.querySelector('.page-wrapper');
+const pageStart = document.querySelector('#start');
+const pagePrev = document.querySelector('#previous');
+const pageNext = document.querySelector('#next');
 const pages = Array.from(document.querySelectorAll('.page'));
+
+const { hash } = window.location;
 
 let currentPage = 0;
 
 const onPageUpdated = (pageIndex) => {
-  if (pageIndex >= 1) {
-    pageNavigation.style.visibility = 'visible';
+  if (pageIndex === 0) {
+    pagePrev.style.opacity = 0;
+    pageNext.style.opacity = 0;
+  } else if (pageIndex === pages.length - 1) {
+    pagePrev.style.opacity = 1;
+    pageNext.style.opacity = 0;
   } else {
-    pageNavigation.style.visibility = 'hidden';
+    pagePrev.style.opacity = 1;
+    pageNext.style.opacity = 1;
   }
+};
+
+const goPage = (pageIndex) => {
+  pageWrapper.scrollLeft = pages[pageIndex].offsetLeft;
+  onPageUpdated(pageIndex);
 };
 
 const goPreviousPage = () => {
   if (currentPage > 0) {
     currentPage -= 1;
-    pageWrapper.scrollLeft = pages[currentPage].offsetLeft;
-    onPageUpdated(currentPage);
+    goPage(currentPage);
   }
 };
 
 const goNextPage = () => {
   if (currentPage < pages.length - 1) {
     currentPage += 1;
-    pageWrapper.scrollLeft = pages[currentPage].offsetLeft;
-    onPageUpdated(currentPage);
+    goPage(currentPage);
   }
 };
 
-document.querySelector('#previous')
-  .addEventListener('click', goPreviousPage);
-document.querySelector('#next')
-  .addEventListener('click', goNextPage);
-document.querySelector('#start')
-  .addEventListener('click', goNextPage);
+pageStart.addEventListener('click', goNextPage);
+pagePrev.addEventListener('click', goPreviousPage);
+pageNext.addEventListener('click', goNextPage);
 
 window.addEventListener('keydown', (event) => {
   switch (event.key) {
@@ -51,10 +60,23 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
+window.addEventListener('resize', () => goPage(currentPage));
+
 Array.from(document.querySelectorAll('img.lazy'))
+  .filter((image) => image.dataset.src)
   .forEach((image) => {
     image.src = image.dataset.src;
     image.classList.remove('lazy');
   });
 
-onPageUpdated(0);
+if (hash) {
+  const pageIndex = Math.floor(hash.substr(1));
+  if (pageIndex >= 0 && pageIndex < pages.length) {
+    currentPage = pageIndex;
+    goPage(currentPage);
+  } else {
+    onPageUpdated(0);
+  }
+} else {
+  onPageUpdated(0);
+}

@@ -6,7 +6,7 @@ body {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  z-index: 5;
+  z-index: 10;
   width: 3rem;
   height: 3rem;
 }
@@ -20,17 +20,21 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
 }
 
+.page-nav__button {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
 .page-wrapper {
   display: flex;
   overflow-x: hidden;
-  background-color: #fafafa;
   scroll-behavior: smooth;
 }
 
@@ -88,7 +92,7 @@ body {
   background-color: white;
   border-radius: 0.25rem;
   transition: all 1s;
-  animation: translucent ease-in-out 1s infinite alternate;
+  animation: translucent ease-in-out 2s infinite alternate;
 }
 
 .hero__title--highlight:hover {
@@ -145,22 +149,34 @@ body {
   padding: 6rem 4rem 2rem;
 }
 
-.grid--double-stage {
+.grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: min-content;
   grid-gap: 0 2rem;
+}
+
+.grid--double-stage {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--triple-stage {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: min-content;
-  grid-gap: 0 2rem;
 }
 
-.no-grid {
-  grid-column: 1 / 4;
+@media (max-width: 1024px) {
+  .grid--double-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--triple-stage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid--triple-stage {
+    grid-template-columns: 1fr;
+  }
 }
 
 .title {
@@ -224,7 +240,7 @@ body {
 }
 
 .card {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   margin: 1rem 0;
   border: 1px solid #eee;
   border-radius: 0.25rem;
@@ -236,14 +252,14 @@ body {
 }
 
 .card__outline {
-  margin: 1rem 0;
+  margin: 0.5rem 0 1rem;
   font-size: 0.8rem;
   font-weight: bold;
   color: #b45a95;
 }
 
 .card__title {
-  margin: 1rem 0;
+  margin: 0.5rem 0 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: #424242;
