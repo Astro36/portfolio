@@ -1,3 +1,5 @@
+@import './font.css';
+
 body {
   margin: 0;
 }
@@ -86,18 +88,38 @@ body {
 }
 
 .hero__title--highlight {
+  position: relative;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #4d225d;
   background-color: white;
   border-radius: 0.25rem;
-  transition: all 1s;
+  transition: color 1s, background-color 1s;
   animation: translucent ease-in-out 2s infinite alternate;
 }
 
 .hero__title--highlight:hover {
   color: white;
   background-color: transparent;
+}
+
+.hero__title--highlight::before {
+  position: absolute;
+  bottom: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d225d;
+  white-space: nowrap;
+  content: 'Front + Back';
+  background-color: white;
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.hero__title--highlight:hover::before {
+  opacity: 1;
 }
 
 .hero__subtitle {
@@ -141,7 +163,7 @@ body {
 }
 
 .headline:hover {
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 .container {

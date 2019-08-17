@@ -39,15 +39,16 @@
     <meta name="twitter:image" content="./images/icon512.png">
 
     <title>My Portfolio</title>
-    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="preload" href="./fonts/raleway.woff2" as="font" crossorigin="anonymous">
+    <link rel="preconnect" href="https://www.google-analytics.com/">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body>
     <nav class="page-nav">
-        <img id="previous" class="page-nav__button lazy" src="./images/ic_arrow_back.svg" alt="Previous">
-        <img id="next" class="page-nav__button lazy" src="./images/ic_arrow_forward.svg" alt="Next">
+        <img role="button" id="previous" class="page-nav__button lazy" src="./images/ic_arrow_back.svg" alt="Previous">
+        <img role="button" id="next" class="page-nav__button lazy" src="./images/ic_arrow_forward.svg" alt="Next">
     </nav>
     <main class="page-wrapper" role="main">
         <!-- Main -->
@@ -56,10 +57,10 @@
             <canvas id="particles" class="wallpaper wallpaper__animation"></canvas>
             <img class="wallpaper wallpaper__foreground" src="./images/wallpaper_foreground.svg" alt="Wallpaper Foreground">
             <div class="wallpaper hero">
-                <h1 class="hero__title">I’m a <span id="highlight" class="hero__title--highlight">hybrid</span> developer</h1>
+                <h1 class="hero__title">I’m a <span class="hero__title--highlight">hybrid</span> developer</h1>
                 <h2 class="hero__subtitle">Seungjae Park</h2>
                 <p class="hero__content">Software Developer at Inha Univ.</p>
-                <img id="start" class="hero__action" src="./images/ic_play_arrow.svg" alt="Next">
+                <img role="button" tabindex="0" id="start" class="hero__action" src="./images/ic_play_arrow.svg" alt="Next">
             </div>
         </section>
 
@@ -70,9 +71,23 @@
                 <article>
                     <ul class="list">
                         <li class="list-item">
+                            <h2 class="list-item__title">Name</h2>
+                            <div class="list-item__content">Seungjae Park</div>
+                        </li>
+                        <li class="list-item">
                             <h2 class="list-item__title">Email</h2>
                             <div class="list-item__content">
                                 <a class="link" href="mailto:astro.psj@gmail.com">astro.psj@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <h2 class="list-item__title">Location</h2>
+                            <div class="list-item__content">Republic of Korea 🇰🇷</div>
+                        </li>
+                        <li class="list-item">
+                            <h2 class="list-item__title">Birth</h2>
+                            <div class="list-item__content">
+                                <time datetime="2000-10-26">2000.10.26</time>
                             </div>
                         </li>
                         <li class="list-item">
@@ -80,16 +95,6 @@
                             <div class="list-item__content">
                                 <a class="link" href="https://github.com/Astro36">@Astro36</a>
                             </div>
-                        </li>
-                        <li class="list-item">
-                            <h2 class="list-item__title">Telegram</h2>
-                            <div class="list-item__content">
-                                <a class="link" href="https://t.me/psj1026">@psj1026</a>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <h2 class="list-item__title">Location</h2>
-                            <div class="list-item__content">Republic of Korea 🇰🇷</div>
                         </li>
                     </ul>
                 </article>
@@ -393,8 +398,7 @@
             </p>
         </section>
     </main>
-    <script src="./scripts/page.js"></script>
-    <script src="./scripts/wallpaper.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

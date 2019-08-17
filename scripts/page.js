@@ -1,4 +1,4 @@
-/* eslint no-param-reassign: off */
+/* eslint-disable no-param-reassign */
 const pageWrapper = document.querySelector('.page-wrapper');
 const pageStart = document.querySelector('#start');
 const pagePrev = document.querySelector('#previous');
@@ -52,9 +52,6 @@ window.addEventListener('keydown', (event) => {
       break;
     case 'ArrowRight':
       goNextPage();
-      break;
-    case 'Tab':
-      event.preventDefault();
       break;
     default:
   }

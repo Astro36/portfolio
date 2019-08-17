@@ -1,4 +1,4 @@
-/* eslint import/no-extraneous-dependencies: off */
+/* eslint-disable import/no-extraneous-dependencies */
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
