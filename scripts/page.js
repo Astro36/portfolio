@@ -9,7 +9,16 @@ const { hash } = window.location;
 
 let currentPage = 0;
 
-const onPageUpdated = (pageIndex) => {
+const onPageLoaded = (pageIndex) => {
+  Array.from(pages[pageIndex].querySelectorAll('img.lazy'))
+    .filter((image) => image.dataset.src)
+    .forEach((image) => {
+      image.src = image.dataset.src;
+      image.classList.remove('lazy');
+    });
+};
+
+const onPageChanged = (pageIndex) => {
   if (pageIndex === 0) {
     pagePrev.style.opacity = 0;
     pageNext.style.opacity = 0;
@@ -23,8 +32,13 @@ const onPageUpdated = (pageIndex) => {
 };
 
 const goPage = (pageIndex) => {
-  pageWrapper.scrollLeft = pages[pageIndex].offsetLeft;
-  onPageUpdated(pageIndex);
+  const page = pages[pageIndex];
+  pageWrapper.scrollLeft = page.offsetLeft;
+  if (!page.dataset.loaded) {
+    page.dataset.loaded = true;
+    onPageLoaded(pageIndex);
+  }
+  onPageChanged(pageIndex);
 };
 
 const goPreviousPage = () => {
@@ -59,21 +73,14 @@ window.addEventListener('keydown', (event) => {
 
 window.addEventListener('resize', () => goPage(currentPage));
 
-Array.from(document.querySelectorAll('img.lazy'))
-  .filter((image) => image.dataset.src)
-  .forEach((image) => {
-    image.src = image.dataset.src;
-    image.classList.remove('lazy');
-  });
-
 if (hash) {
   const pageIndex = Math.floor(hash.substr(1));
   if (pageIndex >= 0 && pageIndex < pages.length) {
     currentPage = pageIndex;
     goPage(currentPage);
   } else {
-    onPageUpdated(0);
+    goPage(0);
   }
 } else {
-  onPageUpdated(0);
+  goPage(0);
 }

@@ -261,6 +261,7 @@ body {
 }
 
 .card {
+  position: relative;
   padding: 1.5rem 2rem;
   margin: 1rem 0;
   border: 1px solid #eee;
@@ -268,7 +269,12 @@ body {
   transition: border 1s;
 }
 
-.card:hover {
+.card--link {
+  display: block;
+  text-decoration: none;
+}
+
+.card--link:hover {
   border: 1px solid #773579;
 }
 
