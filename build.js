@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign, import/no-extraneous-dependencies */
 const fs = require('fs');
 const path = require('path');
 const jsdom = require('jsdom');

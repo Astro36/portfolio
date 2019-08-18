@@ -15,5 +15,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'no-alert': 'off',
+    'no-param-reassign': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };

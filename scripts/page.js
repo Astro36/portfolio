@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 const pageWrapper = document.querySelector('.page-wrapper');
 const pageStart = document.querySelector('#start');
 const pagePrev = document.querySelector('#previous');
