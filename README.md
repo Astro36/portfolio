@@ -2,6 +2,11 @@
 
 > My Portfolio
 
+## Version
+
+- [v1](https://astro36.github.io/portfolio/v1/)
+- [v2(latest)](https://astro36.github.io/portfolio/)
+
 ## License
 
 [Material design icons](https://material.io/tools/icons/) are licensed under an [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) by Google.
