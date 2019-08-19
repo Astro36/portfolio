@@ -29,11 +29,31 @@ const options = {
 const bundler = new Bundler(entryFile, options);
 
 bundler.on('buildStart', async () => {
+  // Remove build files
   const outDir = path.join(__dirname, options.outDir);
   if (fs.existsSync(outDir)) {
-    const outFiles = await fsPromises.readdir(outDir);
-    outFiles.forEach(async (outFile) => {
-      await fsPromises.unlink(path.join(outDir, outFile));
+    const outFiles = await fsPromises.readdir(outDir, { withFileTypes: true });
+    await Promise.all(outFiles
+      .filter((outFile) => outFile.isFile())
+      .map((outFile) => fsPromises.unlink(path.join(outDir, outFile.name))));
+  } else {
+    fsPromises.mkdir(outDir);
+  }
+
+  // Copy old files
+  const oldDir = path.join(__dirname, 'old');
+  if (fs.existsSync(oldDir)) {
+    const verDirs = await fsPromises.readdir(oldDir);
+    verDirs.forEach(async (verDir) => {
+      const oldVerDir = path.join(oldDir, verDir);
+      const outVerDir = path.join(outDir, verDir);
+      const resFiles = await fsPromises.readdir(oldVerDir);
+      if (!fs.existsSync(outVerDir)) {
+        await fsPromises.mkdir(path.join(outVerDir));
+        await Promise.all(resFiles
+          .map((resFile) => fsPromises
+            .copyFile(path.join(oldVerDir, resFile), path.join(outVerDir, resFile))));
+      }
     });
   }
 });

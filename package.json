@@ -18,8 +18,8 @@
   "scripts": {
     "build": "node build.js",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "lint": "eslint --ignore-path .gitignore . & stylelint styles/*.css",
-    "lint:fix": "eslint --fix --ignore-path .gitignore . & stylelint --fix styles/*.css"
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern old . & stylelint styles/*.css",
+    "lint:fix": "eslint --fix --ignore-path .gitignore --ignore-pattern old . & stylelint --fix styles/*.css"
   },
   "repository": {
     "type": "git",
