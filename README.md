@@ -4,8 +4,8 @@
 
 ## Version
 
-- [v1](https://astro36.github.io/portfolio/v1/)
-- [v2(latest)](https://astro36.github.io/portfolio/)
+- [v1](https://astro36.me/v1/)
+- [v2(latest)](https://astro36.me/)
 
 ## License
 
