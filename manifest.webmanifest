@@ -14,10 +14,9 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/portfolio/?utm_source=homescreen",
+    "start_url": "/?utm_source=homescreen",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#773579",
-    "lang": "en",
-    "scope": "/portfolio/"
+    "lang": "en"
 }
