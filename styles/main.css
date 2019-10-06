@@ -153,6 +153,22 @@ body {
   animation: none;
 }
 
+.updated {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  margin: 1rem;
+  font-size: 1rem;
+  color: white;
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
+.updated:hover {
+  opacity: 0.2;
+}
+
 .headline {
   margin: 1rem 0;
   font-size: 5rem;

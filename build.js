@@ -76,6 +76,9 @@ bundler.on('buildEnd', async () => {
   document.querySelectorAll('time[datetime="now"]')
     .forEach((time) => {
       time.setAttribute('datetime', now);
+      if (!time.textContent) {
+        time.textContent = now;
+      }
     });
 
   await fsPromises.writeFile(outFile, dom.serialize());
