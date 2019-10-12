@@ -56,6 +56,9 @@ bundler.on('buildStart', async () => {
       }
     });
   }
+
+  // Create CNAME
+  await fsPromises.writeFile(path.join(outDir, 'CNAME'), 'astro36.me');
 });
 
 bundler.on('buildEnd', async () => {
