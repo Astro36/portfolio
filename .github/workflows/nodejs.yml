@@ -20,7 +20,7 @@ jobs:
     - name: Git Setup
       run: |
         git config --global user.name 'Seungjae Park'
-        git config --global user.email '${{GITHUB_ACTOR}}@users.noreply.github.com'
+        git config --global user.email '${{ github.actor }}@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
     - name: npm install, build, and deploy
       run: |
