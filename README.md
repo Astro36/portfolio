@@ -5,7 +5,8 @@
 ## Version
 
 - [v1](https://astro36.me/v1/)
-- [v2(latest)](https://astro36.me/)
+- [v2](https://astro36.me/v2/)
+- [v2.1(latest)](https://astro36.me/)
 
 ## License
 
