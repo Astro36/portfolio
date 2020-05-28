@@ -4,7 +4,8 @@ const pagePrev = document.querySelector('#previous');
 const pageNext = document.querySelector('#next');
 const pages = Array.from(document.querySelectorAll('.page'));
 
-const { hash } = window.location;
+const FIRST_PAGE_INDEX = 0;
+const LAST_PAGE_INDEX = pages.length - 1;
 
 let currentPage = 0;
 
@@ -18,15 +19,14 @@ const onPageLoaded = (pageIndex) => {
 };
 
 const onPageChanged = (pageIndex) => {
-  if (pageIndex === 0) {
+  if (pageIndex === FIRST_PAGE_INDEX) {
+    window.history.pushState('', document.title, window.location.href.replace(window.location.hash, ''));
     pagePrev.style.opacity = 0;
     pageNext.style.opacity = 0;
-  } else if (pageIndex === pages.length - 1) {
-    pagePrev.style.opacity = 1;
-    pageNext.style.opacity = 0;
   } else {
+    window.location.hash = `#${pageIndex}`;
     pagePrev.style.opacity = 1;
-    pageNext.style.opacity = 1;
+    pageNext.style.opacity = pageIndex === LAST_PAGE_INDEX ? 0 : 1;
   }
 };
 
@@ -41,14 +41,14 @@ const goPage = (pageIndex) => {
 };
 
 const goPreviousPage = () => {
-  if (currentPage > 0) {
+  if (currentPage > FIRST_PAGE_INDEX) {
     currentPage -= 1;
     goPage(currentPage);
   }
 };
 
 const goNextPage = () => {
-  if (currentPage < pages.length - 1) {
+  if (currentPage < LAST_PAGE_INDEX) {
     currentPage += 1;
     goPage(currentPage);
   }
@@ -72,8 +72,8 @@ window.addEventListener('keydown', (event) => {
 
 window.addEventListener('resize', () => goPage(currentPage));
 
-if (hash) {
-  const pageIndex = Math.floor(hash.substr(1));
+if (window.location.hash) {
+  const pageIndex = Number(window.location.hash.substr(1));
   if (pageIndex >= 0 && pageIndex < pages.length) {
     currentPage = pageIndex;
     goPage(currentPage);
