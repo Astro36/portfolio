@@ -1,23 +1,21 @@
 {
   "name": "portfolio",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "My Portfolio",
   "main": "index.js",
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "eslint": "^7.1.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "jsdom": "^16.2.2",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jsdom": "^16.4.0",
     "parcel-bundler": "^1.12.4",
-    "push-dir": "^0.4.1",
-    "stylelint": "^13.5.0",
-    "stylelint-config-recess-order": "^2.0.4",
+    "stylelint": "^13.7.0",
+    "stylelint-config-recess-order": "^2.1.0",
     "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
     "build": "node build.js",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "eslint --ignore-path .gitignore --ignore-pattern old . & stylelint styles/*.css",
     "lint:fix": "eslint --fix --ignore-path .gitignore --ignore-pattern old . & stylelint --fix styles/*.css"
   },
