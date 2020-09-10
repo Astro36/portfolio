@@ -230,6 +230,13 @@ body {
   color: #424242;
 }
 
+.content {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #616161;
+}
+
 .list {
   padding: 0;
   margin: 0 1rem;
@@ -343,6 +350,7 @@ body {
 
 .hashtag {
   display: inline;
+  padding: 0 0.125rem;
   font-weight: normal;
   color: #9e9e9e;
 }
