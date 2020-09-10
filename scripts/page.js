@@ -3,11 +3,16 @@ const pageStart = document.querySelector('#start');
 const pagePrev = document.querySelector('#previous');
 const pageNext = document.querySelector('#next');
 const pages = Array.from(document.querySelectorAll('.page'));
+const scrollWrapper = document.querySelector('.page-wrapper');
 
 const FIRST_PAGE_INDEX = 0;
 const LAST_PAGE_INDEX = pages.length - 1;
 
 let currentPage = 0;
+
+const smoothScroll = (smooth) => {
+  scrollWrapper.style.scrollBehavior = smooth ? 'smooth' : 'auto';
+};
 
 const onPageLoaded = (pageIndex) => {
   Array.from(pages[pageIndex].querySelectorAll('img.lazy'))
@@ -40,6 +45,12 @@ const goPage = (pageIndex) => {
   onPageChanged(pageIndex);
 };
 
+const goPageInstant = (pageIndex) => {
+  smoothScroll(false);
+  goPage(pageIndex);
+  smoothScroll(true);
+};
+
 const goPreviousPage = () => {
   if (currentPage > FIRST_PAGE_INDEX) {
     currentPage -= 1;
@@ -70,13 +81,13 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-window.addEventListener('resize', () => goPage(currentPage));
+window.addEventListener('resize', () => goPageInstant(currentPage));
 
 if (window.location.hash) {
   const pageIndex = Number(window.location.hash.substr(1));
   if (pageIndex >= 0 && pageIndex < pages.length) {
     currentPage = pageIndex;
-    goPage(currentPage);
+    goPageInstant(currentPage);
   } else {
     goPage(0);
   }
