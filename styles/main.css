@@ -71,12 +71,15 @@ body {
 
 .hero {
   position: absolute;
+  top: 50%;
+  left: 50%;
   z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 90vw;
   text-align: center;
+  transform: translate(-50%, calc(48px - 50%));
 }
 
 .hero__title {
@@ -86,9 +89,16 @@ body {
   color: white;
 }
 
+@media (max-width: 599px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+
 .hero__title--highlight {
   position: relative;
   padding: 0.25rem 0.5rem;
+  margin: 0 0.25em;
   font-weight: bold;
   color: #4d225d;
   background-color: white;
@@ -129,23 +139,11 @@ body {
   opacity: 0.9;
 }
 
-.hero__content {
-  margin: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: white;
-  opacity: 0.8;
-}
-
 .hero__action {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
   padding: 1rem;
   color: white;
   background-color: transparent;
   border: none;
-  transform: translate(-50%, -50%);
   animation: bounce ease-in-out 1s infinite alternate;
 }
 
@@ -394,11 +392,11 @@ body {
 
 @keyframes bounce {
   from {
-    transform: translate(-50%, -50%);
+    transform: translateX(0);
   }
 
   to {
-    transform: translate(-40%, -50%);
+    transform: translateX(10%);
   }
 }
 
