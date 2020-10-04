@@ -28,14 +28,13 @@ const onPageChanged = (pageIndex) => {
     window.history.pushState('', document.title, window.location.href.replace(window.location.hash, ''));
     pagePrev.style.opacity = 0;
     pageNext.style.opacity = 0;
+    gtag('config', 'UA-140031790-2', { page_path: '/' });
   } else {
     window.location.hash = `#${pageIndex}`;
     pagePrev.style.opacity = 1;
     pageNext.style.opacity = pageIndex === LAST_PAGE_INDEX ? 0 : 1;
+    gtag('config', 'UA-140031790-2', { page_path: `/#${pageIndex}` });
   }
-  gtag('config', 'UA-140031790-2', {
-    page_path: pageIndex === 0 ? '/' : `/#${pageIndex}`,
-  });
 };
 
 const goPage = (pageIndex) => {
