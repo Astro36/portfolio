@@ -2,20 +2,18 @@
   "name": "portfolio",
   "version": "2.2.0",
   "description": "My Portfolio",
-  "main": "index.js",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "eslint": "^7.8.1",
+    "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "jsdom": "^16.4.0",
-    "parcel-bundler": "^1.12.4",
-    "stylelint": "^13.7.0",
+    "eslint-plugin-import": "^2.22.1",
+    "parcel": "^2.0.0-nightly.415",
+    "stylelint": "^13.7.2",
     "stylelint-config-recess-order": "^2.1.0",
     "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
-    "build": "node build.js",
+    "build": "node prebuild.js & parcel build index.html --no-source-maps --public-url ./ & node postbuild.js ",
     "lint": "eslint --ignore-path .gitignore --ignore-pattern old . & stylelint styles/*.css",
     "lint:fix": "eslint --fix --ignore-path .gitignore --ignore-pattern old . & stylelint --fix styles/*.css"
   },
