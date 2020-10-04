@@ -1,5 +1,3 @@
-import { pageview } from './gtag';
-
 const pageWrapper = document.querySelector('.page-wrapper');
 const pageStart = document.querySelector('#start');
 const pagePrev = document.querySelector('#previous');
@@ -35,7 +33,9 @@ const onPageChanged = (pageIndex) => {
     pagePrev.style.opacity = 1;
     pageNext.style.opacity = pageIndex === LAST_PAGE_INDEX ? 0 : 1;
   }
-  pageview(pageIndex);
+  gtag('config', 'UA-140031790-2', {
+    page_path: pageIndex === 0 ? '/' : `/#${pageIndex}`,
+  });
 };
 
 const goPage = (pageIndex) => {
